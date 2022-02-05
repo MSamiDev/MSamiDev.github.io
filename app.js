@@ -89,7 +89,7 @@
     Object.defineProperty(e, "__esModule", { value: !0 });
     var i = { IX2EngineActionTypes: !0, IX2EngineConstants: !0 };
     e.IX2EngineConstants = e.IX2EngineActionTypes = void 0;
-    var o = n(187);
+    var o = n(189);
     Object.keys(o).forEach(function (t) {
       "default" !== t &&
         "__esModule" !== t &&
@@ -113,7 +113,7 @@
             },
           }));
     });
-    var u = n(188);
+    var u = n(190);
     Object.keys(u).forEach(function (t) {
       "default" !== t &&
         "__esModule" !== t &&
@@ -125,7 +125,7 @@
             },
           }));
     });
-    var c = n(189);
+    var c = n(191);
     Object.keys(c).forEach(function (t) {
       "default" !== t &&
         "__esModule" !== t &&
@@ -137,45 +137,10 @@
             },
           }));
     });
-    var s = r(n(190));
+    var s = r(n(192));
     e.IX2EngineActionTypes = s;
-    var f = r(n(191));
+    var f = r(n(193));
     e.IX2EngineConstants = f;
-  },
-  function (t, e) {
-    var n = Function.prototype,
-      r = n.bind,
-      i = n.call,
-      o = r && r.bind(i);
-    t.exports = r
-      ? function (t) {
-          return t && o(i, t);
-        }
-      : function (t) {
-          return (
-            t &&
-            function () {
-              return i.apply(t, arguments);
-            }
-          );
-        };
-  },
-  function (t, e, n) {
-    var r = n(98),
-      i = "object" == typeof self && self && self.Object === Object && self,
-      o = r || i || Function("return this")();
-    t.exports = o;
-  },
-  function (t, e) {
-    t.exports = function (t) {
-      return "function" == typeof t;
-    };
-  },
-  function (t, e) {
-    t.exports = function (t) {
-      var e = typeof t;
-      return null != t && ("object" == e || "function" == e);
-    };
   },
   function (t, e, n) {
     "use strict";
@@ -339,9 +304,44 @@
       A(),
       (t.exports = window.Webflow = r);
   },
+  function (t, e) {
+    var n = Function.prototype,
+      r = n.bind,
+      i = n.call,
+      o = r && r.bind(i);
+    t.exports = r
+      ? function (t) {
+          return t && o(i, t);
+        }
+      : function (t) {
+          return (
+            t &&
+            function () {
+              return i.apply(t, arguments);
+            }
+          );
+        };
+  },
   function (t, e, n) {
-    var r = n(4),
-      i = n(155),
+    var r = n(98),
+      i = "object" == typeof self && self && self.Object === Object && self,
+      o = r || i || Function("return this")();
+    t.exports = o;
+  },
+  function (t, e) {
+    t.exports = function (t) {
+      return "function" == typeof t;
+    };
+  },
+  function (t, e) {
+    t.exports = function (t) {
+      var e = typeof t;
+      return null != t && ("object" == e || "function" == e);
+    };
+  },
+  function (t, e, n) {
+    var r = n(5),
+      i = n(157),
       o = r({}.hasOwnProperty);
     t.exports =
       Object.hasOwn ||
@@ -350,11 +350,11 @@
       };
   },
   function (t, e, n) {
-    var r = n(194),
-      i = n(248),
+    var r = n(196),
+      i = n(250),
       o = n(62),
       a = n(2),
-      u = n(257);
+      u = n(259);
     t.exports = function (t) {
       return "function" == typeof t
         ? t
@@ -368,8 +368,8 @@
     };
   },
   function (t, e, n) {
-    var r = n(206),
-      i = n(211);
+    var r = n(208),
+      i = n(213);
     t.exports = function (t, e) {
       var n = i(t, e);
       return r(n) ? n : void 0;
@@ -410,17 +410,17 @@
     e.IX2Easings = o;
     var a = r(n(117));
     e.IX2EasingUtils = a;
-    var u = r(n(266));
+    var u = r(n(268));
     e.IX2ElementsReducer = u;
     var c = r(n(119));
     e.IX2VanillaPlugins = c;
-    var s = r(n(268));
+    var s = r(n(270));
     e.IX2VanillaUtils = s;
   },
   function (t, e, n) {
     var r = n(22),
-      i = n(207),
-      o = n(208),
+      i = n(209),
+      o = n(210),
       a = "[object Null]",
       u = "[object Undefined]",
       c = r ? r.toStringTag : void 0;
@@ -467,7 +467,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(6);
+    var r = n(7);
     t.exports = function (t) {
       return "object" == typeof t ? null !== t : r(t);
     };
@@ -735,7 +735,7 @@
     e.default = R;
   },
   function (t, e, n) {
-    var r = n(5).Symbol;
+    var r = n(6).Symbol;
     t.exports = r;
   },
   function (t, e, n) {
@@ -797,7 +797,7 @@
     t.exports = n;
   },
   function (t, e, n) {
-    var r = n(144),
+    var r = n(146),
       i = n(71);
     t.exports = function (t) {
       return r(i(t));
@@ -805,7 +805,7 @@
   },
   function (t, e, n) {
     var r = n(0),
-      i = n(6);
+      i = n(7);
     t.exports = function (t, e) {
       return arguments.length < 2
         ? ((n = r[t]), i(n) ? n : void 0)
@@ -861,11 +861,11 @@
     t.exports = n;
   },
   function (t, e, n) {
-    var r = n(196),
-      i = n(197),
-      o = n(198),
-      a = n(199),
-      u = n(200);
+    var r = n(198),
+      i = n(199),
+      o = n(200),
+      a = n(201),
+      u = n(202);
     function c(t) {
       var e = -1,
         n = null == t ? 0 : t.length;
@@ -893,7 +893,7 @@
     t.exports = r;
   },
   function (t, e, n) {
-    var r = n(220);
+    var r = n(222);
     t.exports = function (t, e) {
       var n = t.__data__;
       return r(e) ? n["string" == typeof e ? "string" : "hash"] : n.map;
@@ -908,7 +908,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(238),
+    var r = n(240),
       i = n(12),
       o = Object.prototype,
       a = o.hasOwnProperty,
@@ -927,8 +927,8 @@
   function (t, e, n) {
     var r = n(2),
       i = n(61),
-      o = n(249),
-      a = n(252);
+      o = n(251),
+      a = n(254);
     t.exports = function (t, e) {
       return r(t) ? t : i(t, e) ? [t] : o(a(t));
     };
@@ -1003,7 +1003,7 @@
         return a;
       });
     var r = n(87),
-      i = n(182),
+      i = n(184),
       o = { INIT: "@@redux/INIT" };
     function a(t, e, n) {
       var u;
@@ -1178,15 +1178,15 @@
     };
   },
   function (t, e, n) {
-    var r = n(11)(n(5), "Map");
+    var r = n(11)(n(6), "Map");
     t.exports = r;
   },
   function (t, e, n) {
-    var r = n(212),
-      i = n(219),
-      o = n(221),
-      a = n(222),
-      u = n(223);
+    var r = n(214),
+      i = n(221),
+      o = n(223),
+      a = n(224),
+      u = n(225);
     function c(t) {
       var e = -1,
         n = null == t ? 0 : t.length;
@@ -1210,8 +1210,8 @@
   },
   function (t, e, n) {
     (function (t) {
-      var r = n(5),
-        i = n(239),
+      var r = n(6),
+        i = n(241),
         o = e && !e.nodeType && e,
         a = o && "object" == typeof t && t && !t.nodeType && t,
         u = a && a.exports === o ? r.Buffer : void 0,
@@ -1234,9 +1234,9 @@
     };
   },
   function (t, e, n) {
-    var r = n(240),
-      i = n(241),
-      o = n(242),
+    var r = n(242),
+      i = n(243),
+      o = n(244),
       a = o && o.isTypedArray,
       u = a ? i(a) : r;
     t.exports = u;
@@ -1249,7 +1249,7 @@
   },
   function (t, e, n) {
     var r = n(57),
-      i = n(243),
+      i = n(245),
       o = Object.prototype.hasOwnProperty;
     t.exports = function (t) {
       if (!r(t)) return i(t);
@@ -1266,10 +1266,10 @@
     };
   },
   function (t, e, n) {
-    var r = n(244),
+    var r = n(246),
       i = n(49),
-      o = n(245),
-      a = n(246),
+      o = n(247),
+      a = n(248),
       u = n(108),
       c = n(15),
       s = n(99),
@@ -1349,8 +1349,8 @@
     };
   },
   function (t, e, n) {
-    var r = n(261),
-      i = n(7),
+    var r = n(263),
+      i = n(8),
       o = n(38),
       a = NaN,
       u = /^[-+]0x[0-9a-f]+$/i,
@@ -2660,7 +2660,7 @@
   function (t, e, n) {
     var r = n(13),
       i = n(39),
-      o = n(143),
+      o = n(145),
       a = n(70),
       u = n(26),
       c = n(72),
@@ -2695,7 +2695,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(146),
+    var r = n(148),
       i = n(73);
     t.exports = function (t) {
       var e = r(t, "string");
@@ -2705,8 +2705,8 @@
   function (t, e, n) {
     var r = n(0),
       i = n(27),
-      o = n(6),
-      a = n(147),
+      o = n(7),
+      a = n(149),
       u = n(74),
       c = r.Object;
     t.exports = u
@@ -2723,7 +2723,7 @@
     t.exports = r && !Symbol.sham && "symbol" == typeof Symbol.iterator;
   },
   function (t, e, n) {
-    var r = n(148),
+    var r = n(150),
       i = n(18);
     t.exports =
       !!Object.getOwnPropertySymbols &&
@@ -2756,7 +2756,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(154),
+    var r = n(156),
       i = n(40);
     (t.exports = function (t, e) {
       return i[t] || (i[t] = void 0 !== e ? e : {});
@@ -2767,7 +2767,7 @@
     });
   },
   function (t, e, n) {
-    var r = n(4),
+    var r = n(5),
       i = 0,
       o = Math.random(),
       a = r((1).toString);
@@ -2802,8 +2802,8 @@
     };
   },
   function (t, e, n) {
-    var r = n(4),
-      i = n(6),
+    var r = n(5),
+      i = n(7),
       o = n(40),
       a = r(Function.toString);
     i(o.inspectSource) ||
@@ -2821,7 +2821,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(4),
+    var r = n(5),
       i = n(9),
       o = n(26),
       a = n(84).indexOf,
@@ -2839,8 +2839,8 @@
   },
   function (t, e, n) {
     var r = n(26),
-      i = n(163),
-      o = n(164),
+      i = n(165),
+      o = n(166),
       a = function (t) {
         return function (e, n, a) {
           var u,
@@ -2893,9 +2893,9 @@
   function (t, e, n) {
     "use strict";
     n.r(e);
-    var r = n(174),
-      i = n(179),
-      o = n(181),
+    var r = n(176),
+      i = n(181),
+      o = n(183),
       a = "[object Object]",
       u = Function.prototype,
       c = Object.prototype,
@@ -2913,7 +2913,7 @@
   function (t, e, n) {
     "use strict";
     n.r(e);
-    var r = n(175).default.Symbol;
+    var r = n(177).default.Symbol;
     e.default = r;
   },
   function (t, e, n) {
@@ -3108,7 +3108,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(95)(n(259));
+    var r = n(95)(n(261));
     t.exports = r;
   },
   function (t, e, n) {
@@ -3132,11 +3132,11 @@
   },
   function (t, e, n) {
     var r = n(31),
-      i = n(201),
-      o = n(202),
-      a = n(203),
-      u = n(204),
-      c = n(205);
+      i = n(203),
+      o = n(204),
+      a = n(205),
+      u = n(206),
+      c = n(207);
     function s(t) {
       var e = (this.__data__ = new r(t));
       this.size = e.size;
@@ -3150,7 +3150,7 @@
   },
   function (t, e, n) {
     var r = n(15),
-      i = n(7),
+      i = n(8),
       o = "[object AsyncFunction]",
       a = "[object Function]",
       u = "[object GeneratorFunction]",
@@ -3182,7 +3182,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(224),
+    var r = n(226),
       i = n(12);
     t.exports = function t(e, n, o, a, u) {
       return (
@@ -3194,9 +3194,9 @@
     };
   },
   function (t, e, n) {
-    var r = n(225),
-      i = n(228),
-      o = n(229),
+    var r = n(227),
+      i = n(230),
+      o = n(231),
       a = 1,
       u = 2;
     t.exports = function (t, e, n, c, s, f) {
@@ -3245,7 +3245,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(236),
+    var r = n(238),
       i = n(104),
       o = Object.prototype.propertyIsEnumerable,
       a = Object.getOwnPropertySymbols,
@@ -3267,7 +3267,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(237),
+    var r = n(239),
       i = n(36),
       o = n(2),
       a = n(52),
@@ -3326,11 +3326,11 @@
     };
   },
   function (t, e, n) {
-    var r = n(11)(n(5), "WeakMap");
+    var r = n(11)(n(6), "WeakMap");
     t.exports = r;
   },
   function (t, e, n) {
-    var r = n(7);
+    var r = n(8);
     t.exports = function (t) {
       return t == t && !r(t);
     };
@@ -3364,7 +3364,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(260);
+    var r = n(262);
     t.exports = function (t) {
       var e = r(t),
         n = e % 1;
@@ -3657,9 +3657,9 @@
     }
   },
   function (t, e, n) {
-    var r = n(263),
-      i = n(264),
-      o = n(265);
+    var r = n(265),
+      i = n(266),
+      o = n(267);
     t.exports = function (t) {
       return r(t) || i(t) || o();
     };
@@ -3679,7 +3679,7 @@
         e.getPluginOrigin =
         e.getPluginConfig =
           void 0);
-    var i = n(267),
+    var i = n(269),
       o = n(3),
       a = n(47),
       u = (0, r.default)({}, o.ActionTypeConsts.PLUGIN_LOTTIE, {
@@ -3721,11 +3721,11 @@
   },
   function (t, e, n) {
     var r = n(121),
-      i = n(274)(r);
+      i = n(276)(r);
     t.exports = i;
   },
   function (t, e, n) {
-    var r = n(272),
+    var r = n(274),
       i = n(35);
     t.exports = function (t, e) {
       return t && r(t, e, i);
@@ -3733,9 +3733,9 @@
   },
   function (t, e, n) {
     "use strict";
-    var r = n(278);
+    var r = n(280);
     (e.__esModule = !0), (e.default = void 0);
-    var i = r(n(279)).default;
+    var i = r(n(281)).default;
     e.default = i;
   },
   function (t, e, n) {
@@ -3784,21 +3784,21 @@
       (e.stopActionGroup = Et),
       (e.startActionGroup = _t);
     var a = o(n(30)),
-      u = o(n(282)),
+      u = o(n(284)),
       c = o(n(94)),
       s = o(n(59)),
-      f = o(n(283)),
-      l = o(n(289)),
-      d = o(n(301)),
-      p = o(n(302)),
-      v = o(n(303)),
-      h = o(n(306)),
+      f = o(n(285)),
+      l = o(n(291)),
+      d = o(n(303)),
+      p = o(n(304)),
+      v = o(n(305)),
+      h = o(n(308)),
       E = o(n(122)),
       _ = n(3),
       g = n(14),
       y = n(64),
-      m = i(n(309)),
-      I = o(n(310)),
+      m = i(n(311)),
+      I = o(n(312)),
       T = Object.keys(_.QuickEffectIds),
       b = function (t) {
         return T.includes(t);
@@ -4598,7 +4598,7 @@
     t.exports = i;
   },
   function (t, e, n) {
-    var r = n(7),
+    var r = n(8),
       i = Object.create,
       o = (function () {
         function t() {}
@@ -4613,8 +4613,8 @@
     t.exports = o;
   },
   function (t, e, n) {
-    var r = n(323),
-      i = n(324),
+    var r = n(325),
+      i = n(326),
       o = r
         ? function (t) {
             return r.get(t);
@@ -4623,7 +4623,7 @@
     t.exports = o;
   },
   function (t, e, n) {
-    var r = n(325),
+    var r = n(327),
       i = Object.prototype.hasOwnProperty;
     t.exports = function (t) {
       for (
@@ -4643,15 +4643,17 @@
       n(132),
       n(133),
       n(134),
+      n(135),
       n(136),
-      n(332),
-      n(333),
+      n(138),
       n(334),
-      (t.exports = n(335));
+      n(335),
+      n(336),
+      (t.exports = n(337));
   },
   function (t, e, n) {
     "use strict";
-    var r = n(8);
+    var r = n(4);
     r.define(
       "brand",
       (t.exports = function (t) {
@@ -4682,38 +4684,7 @@
         }
         return (
           (n.ready = function () {
-            var n,
-              r,
-              a,
-              u = o.attr("data-wf-status"),
-              p = o.attr("data-wf-domain") || "";
-            /\.webflow\.io$/i.test(p) && c.hostname !== p && (u = !0),
-              u &&
-                !s &&
-                ((e =
-                  e ||
-                  ((n = t('').attr(
-                    "href",
-                    ""
-                  )),
-                  (r = t("")
-                    .attr(
-                      "src",
-                      ""
-                    )
-                    .attr("alt", "")
-                    .css({ marginRight: "0px", width: "0px" })),
-                  (a = t("")
-                    .attr(
-                      "src",
-                      ""
-                    )
-                    .attr("alt", "")),
-                  n.append(r, a),
-                  n[0])),
-                d(),
-                setTimeout(d, 500),
-                t(i).off(f, l).on(f, l));
+            
           }),
           n
         );
@@ -4970,7 +4941,7 @@
   },
   function (t, e, n) {
     "use strict";
-    var r = n(8);
+    var r = n(4);
     r.define(
       "edit",
       (t.exports = function (t, e, n) {
@@ -5083,7 +5054,7 @@
   },
   function (t, e, n) {
     "use strict";
-    n(8).define(
+    n(4).define(
       "focus-visible",
       (t.exports = function () {
         function t(t) {
@@ -5214,7 +5185,114 @@
   },
   function (t, e, n) {
     "use strict";
-    var r = n(135);
+    n(4).define(
+      "focus-within",
+      (t.exports = function () {
+        function t(t) {
+          for (
+            var e = [t], n = null;
+            (n = t.parentNode || t.host || t.defaultView);
+
+          )
+            e.push(n), (t = n);
+          return e;
+        }
+        function e(t) {
+          "function" != typeof t.getAttribute ||
+            t.getAttribute("data-wf-focus-within") ||
+            t.setAttribute("data-wf-focus-within", "true");
+        }
+        function n(t) {
+          "function" == typeof t.getAttribute &&
+            t.getAttribute("data-wf-focus-within") &&
+            t.removeAttribute("data-wf-focus-within");
+        }
+        return {
+          ready: function () {
+            if (
+              "undefined" != typeof document &&
+              document.body.hasAttribute("data-wf-focus-within")
+            )
+              try {
+                document.querySelector(":focus-within");
+              } catch (i) {
+                (r = function (r) {
+                  var i;
+                  i ||
+                    (window.requestAnimationFrame(function () {
+                      (i = !1),
+                        "blur" === r.type &&
+                          Array.prototype.slice.call(t(r.target)).forEach(n),
+                        "focus" === r.type &&
+                          Array.prototype.slice.call(t(r.target)).forEach(e);
+                    }),
+                    (i = !0));
+                }),
+                  document.addEventListener("focus", r, !0),
+                  document.addEventListener("blur", r, !0),
+                  e(document.body);
+              }
+            var r;
+          },
+        };
+      })
+    );
+  },
+  function (t, e, n) {
+    "use strict";
+    var r = n(4);
+    r.define(
+      "focus",
+      (t.exports = function () {
+        var t = [],
+          e = !1;
+        function n(n) {
+          e &&
+            (n.preventDefault(),
+            n.stopPropagation(),
+            n.stopImmediatePropagation(),
+            t.unshift(n));
+        }
+        function i(n) {
+          (function (t) {
+            var e = t.target,
+              n = e.tagName;
+            return (
+              (/^a$/i.test(n) && null != e.href) ||
+              (/^(button|textarea)$/i.test(n) && !0 !== e.disabled) ||
+              (/^input$/i.test(n) &&
+                /^(button|reset|submit|radio|checkbox)$/i.test(e.type) &&
+                !e.disabled) ||
+              (!/^(button|input|textarea|select|a)$/i.test(n) &&
+                !Number.isNaN(Number.parseFloat(e.tabIndex))) ||
+              /^audio$/i.test(n) ||
+              (/^video$/i.test(n) && !0 === e.controls)
+            );
+          })(n) &&
+            ((e = !0),
+            setTimeout(function () {
+              for (e = !1, n.target.focus(); t.length > 0; ) {
+                var r = t.pop();
+                r.target.dispatchEvent(new MouseEvent(r.type, r));
+              }
+            }, 0));
+        }
+        return {
+          ready: function () {
+            "undefined" != typeof document &&
+              document.body.hasAttribute("data-wf-focus-within") &&
+              r.env.safari &&
+              (document.addEventListener("mousedown", i, !0),
+              document.addEventListener("mouseup", n, !0),
+              document.addEventListener("click", n, !0));
+          },
+        };
+      })
+    );
+  },
+  function (t, e, n) {
+    "use strict";
+    var r = n(137);
     function i(t, e) {
       var n = document.createEvent("CustomEvent");
       n.initCustomEvent(e, !0, !0, null), t.dispatchEvent(n);
@@ -5278,8 +5356,8 @@
   },
   function (t, e, n) {
     "use strict";
-    var r = n(8),
-      i = n(137);
+    var r = n(4),
+      i = n(139);
     i.setEnv(r.env),
       r.define(
         "ix2",
@@ -5301,9 +5379,9 @@
       }),
       (e.destroy = f),
       (e.actions = e.store = void 0),
-      n(138);
+      n(140);
     var o = n(86),
-      a = i(n(185)),
+      a = i(n(187)),
       u = n(123),
       c = r(n(64));
     e.actions = c;
@@ -5314,23 +5392,23 @@
     e.store = s;
   },
   function (t, e, n) {
-    var r = n(139);
+    var r = n(141);
     t.exports = r;
   },
   function (t, e, n) {
-    var r = n(140);
+    var r = n(142);
     t.exports = r;
   },
   function (t, e, n) {
-    n(141);
-    var r = n(173);
+    n(143);
+    var r = n(175);
     t.exports = r("Array", "includes");
   },
   function (t, e, n) {
     "use strict";
-    var r = n(142),
+    var r = n(144),
       i = n(84).includes,
-      o = n(168);
+      o = n(170);
     r(
       { target: "Array", proto: !0 },
       {
@@ -5345,10 +5423,10 @@
     var r = n(0),
       i = n(69).f,
       o = n(42),
-      a = n(156),
+      a = n(158),
       u = n(41),
-      c = n(160),
-      s = n(167);
+      c = n(162),
+      s = n(169);
     t.exports = function (t, e) {
       var n,
         f,
@@ -5386,9 +5464,9 @@
   },
   function (t, e, n) {
     var r = n(0),
-      i = n(4),
+      i = n(5),
       o = n(18),
-      a = n(145),
+      a = n(147),
       u = r.Object,
       c = i("".split);
     t.exports = o(function () {
@@ -5400,7 +5478,7 @@
       : u;
   },
   function (t, e, n) {
-    var r = n(4),
+    var r = n(5),
       i = r({}.toString),
       o = r("".slice);
     t.exports = function (t) {
@@ -5412,8 +5490,8 @@
       i = n(39),
       o = n(19),
       a = n(73),
-      u = n(150),
-      c = n(153),
+      u = n(152),
+      c = n(155),
       s = n(76),
       f = r.TypeError,
       l = s("toPrimitive");
@@ -5430,14 +5508,14 @@
     };
   },
   function (t, e, n) {
-    var r = n(4);
+    var r = n(5);
     t.exports = r({}.isPrototypeOf);
   },
   function (t, e, n) {
     var r,
       i,
       o = n(0),
-      a = n(149),
+      a = n(151),
       u = o.process,
       c = o.Deno,
       s = (u && u.versions) || (c && c.version),
@@ -5455,7 +5533,7 @@
     t.exports = r("navigator", "userAgent") || "";
   },
   function (t, e, n) {
-    var r = n(151);
+    var r = n(153);
     t.exports = function (t, e) {
       var n = t[e];
       return null == n ? void 0 : r(n);
@@ -5463,8 +5541,8 @@
   },
   function (t, e, n) {
     var r = n(0),
-      i = n(6),
-      o = n(152),
+      i = n(7),
+      o = n(154),
       a = r.TypeError;
     t.exports = function (t) {
       if (i(t)) return t;
@@ -5484,7 +5562,7 @@
   function (t, e, n) {
     var r = n(0),
       i = n(39),
-      o = n(6),
+      o = n(7),
       a = n(19),
       u = r.TypeError;
     t.exports = function (t, e) {
@@ -5508,13 +5586,13 @@
   },
   function (t, e, n) {
     var r = n(0),
-      i = n(6),
+      i = n(7),
       o = n(9),
       a = n(42),
       u = n(41),
       c = n(81),
-      s = n(157),
-      f = n(159).CONFIGURABLE,
+      s = n(159),
+      f = n(161).CONFIGURABLE,
       l = s.get,
       d = s.enforce,
       p = String(String).split("String");
@@ -5544,9 +5622,9 @@
     var r,
       i,
       o,
-      a = n(158),
+      a = n(160),
       u = n(0),
-      c = n(4),
+      c = n(5),
       s = n(19),
       f = n(42),
       l = n(9),
@@ -5603,7 +5681,7 @@
   },
   function (t, e, n) {
     var r = n(0),
-      i = n(6),
+      i = n(7),
       o = n(81),
       a = r.WeakMap;
     t.exports = i(a) && /native code/.test(o(a));
@@ -5620,7 +5698,7 @@
   },
   function (t, e, n) {
     var r = n(9),
-      i = n(161),
+      i = n(163),
       o = n(69),
       a = n(28);
     t.exports = function (t, e) {
@@ -5632,9 +5710,9 @@
   },
   function (t, e, n) {
     var r = n(27),
-      i = n(4),
-      o = n(162),
-      a = n(166),
+      i = n(5),
+      o = n(164),
+      a = n(168),
       u = n(29),
       c = i([].concat);
     t.exports =
@@ -5664,7 +5742,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(165);
+    var r = n(167);
     t.exports = function (t) {
       return r(t.length);
     };
@@ -5681,7 +5759,7 @@
   },
   function (t, e, n) {
     var r = n(18),
-      i = n(6),
+      i = n(7),
       o = /#|\.prototype\./,
       a = function (t, e) {
         var n = c[u(t)];
@@ -5697,7 +5775,7 @@
   },
   function (t, e, n) {
     var r = n(76),
-      i = n(169),
+      i = n(171),
       o = n(28),
       a = r("unscopables"),
       u = Array.prototype;
@@ -5709,10 +5787,10 @@
   function (t, e, n) {
     var r,
       i = n(29),
-      o = n(170),
+      o = n(172),
       a = n(44),
       u = n(43),
-      c = n(172),
+      c = n(174),
       s = n(80),
       f = n(82),
       l = f("IE_PROTO"),
@@ -5766,7 +5844,7 @@
       i = n(28),
       o = n(29),
       a = n(26),
-      u = n(171);
+      u = n(173);
     t.exports = r
       ? Object.defineProperties
       : function (t, e) {
@@ -5791,7 +5869,7 @@
   },
   function (t, e, n) {
     var r = n(0),
-      i = n(4);
+      i = n(5);
     t.exports = function (t, e) {
       return i(r[t].prototype[e]);
     };
@@ -5800,8 +5878,8 @@
     "use strict";
     n.r(e);
     var r = n(88),
-      i = n(177),
-      o = n(178),
+      i = n(179),
+      o = n(180),
       a = "[object Null]",
       u = "[object Undefined]",
       c = r.default ? r.default.toStringTag : void 0;
@@ -5818,7 +5896,7 @@
   function (t, e, n) {
     "use strict";
     n.r(e);
-    var r = n(176),
+    var r = n(178),
       i = "object" == typeof self && self && self.Object === Object && self,
       o = r.default || i || Function("return this")();
     e.default = o;
@@ -5861,7 +5939,7 @@
   function (t, e, n) {
     "use strict";
     n.r(e);
-    var r = n(180),
+    var r = n(182),
       i = Object(r.default)(Object.getPrototypeOf, Object);
     e.default = i;
   },
@@ -5886,7 +5964,7 @@
     n.r(e),
       function (t, r) {
         var i,
-          o = n(184);
+          o = n(186);
         i =
           "undefined" != typeof self
             ? self
@@ -5897,7 +5975,7 @@
             : r;
         var a = Object(o.default)(i);
         e.default = a;
-      }.call(this, n(25), n(183)(t));
+      }.call(this, n(25), n(185)(t));
   },
   function (t, e) {
     t.exports = function (t) {
@@ -5945,12 +6023,12 @@
     "use strict";
     Object.defineProperty(e, "__esModule", { value: !0 }), (e.default = void 0);
     var r = n(86),
-      i = n(186),
-      o = n(192),
-      a = n(193),
+      i = n(188),
+      o = n(194),
+      a = n(195),
       u = n(14),
-      c = n(280),
-      s = n(281),
+      c = n(282),
+      s = n(283),
       f = u.IX2ElementsReducer.ixElements,
       l = (0, r.combineReducers)({
         ixData: i.ixData,
@@ -6395,8 +6473,8 @@
     };
   },
   function (t, e, n) {
-    var r = n(195),
-      i = n(247),
+    var r = n(197),
+      i = n(249),
       o = n(110);
     t.exports = function (t) {
       var e = i(t);
@@ -6515,8 +6593,8 @@
   },
   function (t, e, n) {
     var r = n(97),
-      i = n(209),
-      o = n(7),
+      i = n(211),
+      o = n(8),
       a = n(99),
       u = /^\[object .+?Constructor\]$/,
       c = Function.prototype,
@@ -6563,7 +6641,7 @@
   },
   function (t, e, n) {
     var r,
-      i = n(210),
+      i = n(212),
       o = (r = /[^.]+$/.exec((i && i.keys && i.keys.IE_PROTO) || ""))
         ? "Symbol(src)_1." + r
         : "";
@@ -6572,7 +6650,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(5)["__core-js_shared__"];
+    var r = n(6)["__core-js_shared__"];
     t.exports = r;
   },
   function (t, e) {
@@ -6581,7 +6659,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(213),
+    var r = n(215),
       i = n(31),
       o = n(49);
     t.exports = function () {
@@ -6594,11 +6672,11 @@
     };
   },
   function (t, e, n) {
-    var r = n(214),
-      i = n(215),
-      o = n(216),
-      a = n(217),
-      u = n(218);
+    var r = n(216),
+      i = n(217),
+      o = n(218),
+      a = n(219),
+      u = n(220);
     function c(t) {
       var e = -1,
         n = null == t ? 0 : t.length;
@@ -6697,8 +6775,8 @@
   function (t, e, n) {
     var r = n(96),
       i = n(101),
-      o = n(230),
-      a = n(234),
+      o = n(232),
+      a = n(236),
       u = n(58),
       c = n(2),
       s = n(52),
@@ -6739,8 +6817,8 @@
   },
   function (t, e, n) {
     var r = n(50),
-      i = n(226),
-      o = n(227);
+      i = n(228),
+      o = n(229);
     function a(t) {
       var e = -1,
         n = null == t ? 0 : t.length;
@@ -6775,11 +6853,11 @@
   },
   function (t, e, n) {
     var r = n(22),
-      i = n(231),
+      i = n(233),
       o = n(48),
       a = n(101),
-      u = n(232),
-      c = n(233),
+      u = n(234),
+      c = n(235),
       s = 1,
       f = 2,
       l = "[object Boolean]",
@@ -6829,7 +6907,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(5).Uint8Array;
+    var r = n(6).Uint8Array;
     t.exports = r;
   },
   function (t, e) {
@@ -6857,7 +6935,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(235),
+    var r = n(237),
       i = 1,
       o = Object.prototype.hasOwnProperty;
     t.exports = function (t, e, n, a, u, c) {
@@ -6999,15 +7077,15 @@
     t.exports = r;
   },
   function (t, e, n) {
-    var r = n(11)(n(5), "DataView");
+    var r = n(11)(n(6), "DataView");
     t.exports = r;
   },
   function (t, e, n) {
-    var r = n(11)(n(5), "Promise");
+    var r = n(11)(n(6), "Promise");
     t.exports = r;
   },
   function (t, e, n) {
-    var r = n(11)(n(5), "Set");
+    var r = n(11)(n(6), "Set");
     t.exports = r;
   },
   function (t, e, n) {
@@ -7025,7 +7103,7 @@
   function (t, e, n) {
     var r = n(100),
       i = n(59),
-      o = n(254),
+      o = n(256),
       a = n(61),
       u = n(109),
       c = n(110),
@@ -7042,7 +7120,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(250),
+    var r = n(252),
       i =
         /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g,
       o = /\\(\\)?/g,
@@ -7059,7 +7137,7 @@
     t.exports = a;
   },
   function (t, e, n) {
-    var r = n(251),
+    var r = n(253),
       i = 500;
     t.exports = function (t) {
       var e = r(t, function (t) {
@@ -7088,7 +7166,7 @@
     (o.Cache = r), (t.exports = o);
   },
   function (t, e, n) {
-    var r = n(253);
+    var r = n(255);
     t.exports = function (t) {
       return null == t ? "" : r(t);
     };
@@ -7110,8 +7188,8 @@
     };
   },
   function (t, e, n) {
-    var r = n(255),
-      i = n(256);
+    var r = n(257),
+      i = n(258);
     t.exports = function (t, e) {
       return null != t && i(t, e, r);
     };
@@ -7141,7 +7219,7 @@
   },
   function (t, e, n) {
     var r = n(112),
-      i = n(258),
+      i = n(260),
       o = n(61),
       a = n(23);
     t.exports = function (t) {
@@ -7185,7 +7263,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(262),
+    var r = n(264),
       i = /^\s+/;
     t.exports = function (t) {
       return t ? t.slice(0, r(t) + 1).replace(i, "") : t;
@@ -7816,9 +7894,9 @@
         return n + z + i + z + (void 0 === o ? "" : o);
       }),
       (e.getItemConfigByKey = void 0);
-    var f = s(n(269)),
-      l = s(n(270)),
-      d = s(n(276)),
+    var f = s(n(271)),
+      l = s(n(272)),
+      d = s(n(278)),
       p = n(21),
       v = s(n(122)),
       h = n(3),
@@ -8219,10 +8297,10 @@
     };
   },
   function (t, e, n) {
-    var r = n(271),
+    var r = n(273),
       i = n(120),
       o = n(10),
-      a = n(275),
+      a = n(277),
       u = n(2);
     t.exports = function (t, e, n) {
       var c = u(t) ? r : a,
@@ -8239,7 +8317,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(273)();
+    var r = n(275)();
     t.exports = r;
   },
   function (t, e) {
@@ -8279,7 +8357,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(95)(n(277));
+    var r = n(95)(n(279));
     t.exports = r;
   },
   function (t, e, n) {
@@ -8614,8 +8692,8 @@
     var r = n(56),
       i = n(58),
       o = n(16),
-      a = n(284),
-      u = n(285),
+      a = n(286),
+      u = n(287),
       c = "[object Map]",
       s = "[object Set]";
     t.exports = function (t) {
@@ -8635,9 +8713,9 @@
     };
   },
   function (t, e, n) {
-    var r = n(286),
-      i = n(287),
-      o = n(288);
+    var r = n(288),
+      i = n(289),
+      o = n(290);
     t.exports = function (t) {
       return i(t) ? o(t) : r(t);
     };
@@ -8679,8 +8757,8 @@
   },
   function (t, e, n) {
     var r = n(10),
-      i = n(290),
-      o = n(291);
+      i = n(292),
+      o = n(293);
     t.exports = function (t, e) {
       return o(t, i(r(e)));
     };
@@ -8708,8 +8786,8 @@
   function (t, e, n) {
     var r = n(111),
       i = n(10),
-      o = n(292),
-      a = n(295);
+      o = n(294),
+      a = n(297);
     t.exports = function (t, e) {
       if (null == t) return {};
       var n = r(a(t), function (t) {
@@ -8725,7 +8803,7 @@
   },
   function (t, e, n) {
     var r = n(60),
-      i = n(293),
+      i = n(295),
       o = n(37);
     t.exports = function (t, e, n) {
       for (var a = -1, u = e.length, c = {}; ++a < u; ) {
@@ -8737,10 +8815,10 @@
     };
   },
   function (t, e, n) {
-    var r = n(294),
+    var r = n(296),
       i = n(37),
       o = n(53),
-      a = n(7),
+      a = n(8),
       u = n(23);
     t.exports = function (t, e, n, c) {
       if (!a(t)) return t;
@@ -8774,15 +8852,15 @@
   },
   function (t, e, n) {
     var r = n(102),
-      i = n(296),
-      o = n(298);
+      i = n(298),
+      o = n(300);
     t.exports = function (t) {
       return r(t, o, i);
     };
   },
   function (t, e, n) {
     var r = n(51),
-      i = n(297),
+      i = n(299),
       o = n(103),
       a = n(104),
       u = Object.getOwnPropertySymbols
@@ -8799,16 +8877,16 @@
   },
   function (t, e, n) {
     var r = n(105),
-      i = n(299),
+      i = n(301),
       o = n(16);
     t.exports = function (t) {
       return o(t) ? r(t, !0) : i(t);
     };
   },
   function (t, e, n) {
-    var r = n(7),
+    var r = n(8),
       i = n(57),
-      o = n(300),
+      o = n(302),
       a = Object.prototype.hasOwnProperty;
     t.exports = function (t) {
       if (!r(t)) return o(t);
@@ -8873,9 +8951,9 @@
     };
   },
   function (t, e, n) {
-    var r = n(304),
+    var r = n(306),
       i = n(120),
-      o = n(305),
+      o = n(307),
       a = n(2);
     t.exports = function (t, e) {
       return (a(t) ? r : i)(t, o(e));
@@ -8898,8 +8976,8 @@
     };
   },
   function (t, e, n) {
-    var r = n(307),
-      i = n(7),
+    var r = n(309),
+      i = n(8),
       o = "Expected a function";
     t.exports = function (t, e, n) {
       var a = !0,
@@ -8914,8 +8992,8 @@
     };
   },
   function (t, e, n) {
-    var r = n(7),
-      i = n(308),
+    var r = n(8),
+      i = n(310),
       o = n(63),
       a = "Expected a function",
       u = Math.max,
@@ -8984,7 +9062,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(5);
+    var r = n(6);
     t.exports = function () {
       return r.Date.now();
     };
@@ -9111,9 +9189,9 @@
       s,
       f,
       l = u(n(30)),
-      d = u(n(311)),
+      d = u(n(313)),
       p = u(n(59)),
-      v = u(n(330)),
+      v = u(n(332)),
       h = n(3),
       E = n(123),
       _ = n(64),
@@ -9639,16 +9717,16 @@
     e.default = _t;
   },
   function (t, e, n) {
-    var r = n(312)();
+    var r = n(314)();
     t.exports = r;
   },
   function (t, e, n) {
     var r = n(65),
-      i = n(313),
+      i = n(315),
       o = n(127),
       a = n(128),
       u = n(2),
-      c = n(326),
+      c = n(328),
       s = "Expected a function",
       f = 8,
       l = 32,
@@ -9687,22 +9765,22 @@
     };
   },
   function (t, e, n) {
-    var r = n(314),
-      i = n(317),
-      o = n(319);
+    var r = n(316),
+      i = n(319),
+      o = n(321);
     t.exports = function (t) {
       return o(i(t, void 0, r), t + "");
     };
   },
   function (t, e, n) {
-    var r = n(315);
+    var r = n(317);
     t.exports = function (t) {
       return null != t && t.length ? r(t, 1) : [];
     };
   },
   function (t, e, n) {
     var r = n(51),
-      i = n(316);
+      i = n(318);
     t.exports = function t(e, n, o, a, u) {
       var c = -1,
         s = e.length;
@@ -9727,7 +9805,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(318),
+    var r = n(320),
       i = Math.max;
     t.exports = function (t, e, n) {
       return (
@@ -9762,12 +9840,12 @@
     };
   },
   function (t, e, n) {
-    var r = n(320),
-      i = n(322)(r);
+    var r = n(322),
+      i = n(324)(r);
     t.exports = i;
   },
   function (t, e, n) {
-    var r = n(321),
+    var r = n(323),
       i = n(125),
       o = n(62),
       a = i
@@ -9821,7 +9899,7 @@
     var r = n(67),
       i = n(127),
       o = n(128),
-      a = n(327);
+      a = n(329);
     t.exports = function (t) {
       var e = o(t),
         n = a[e];
@@ -9837,7 +9915,7 @@
       o = n(66),
       a = n(2),
       u = n(12),
-      c = n(328),
+      c = n(330),
       s = Object.prototype.hasOwnProperty;
     function f(t) {
       if (u(t) && !a(t) && !(t instanceof r)) {
@@ -9851,7 +9929,7 @@
   function (t, e, n) {
     var r = n(67),
       i = n(65),
-      o = n(329);
+      o = n(331);
     t.exports = function (t) {
       if (t instanceof r) return t.clone();
       var e = new i(t.__wrapped__, t.__chain__);
@@ -9872,7 +9950,7 @@
     };
   },
   function (t, e, n) {
-    var r = n(331),
+    var r = n(333),
       i = n(63);
     t.exports = function (t, e, n) {
       return (
@@ -9895,7 +9973,7 @@
   },
   function (t, e, n) {
     "use strict";
-    var r = n(8);
+    var r = n(4);
     r.define(
       "links",
       (t.exports = function (t, e) {
@@ -9964,7 +10042,7 @@
   },
   function (t, e, n) {
     "use strict";
-    var r = n(8);
+    var r = n(4);
     r.define(
       "scroll",
       (t.exports = function (t) {
@@ -10141,7 +10219,7 @@
   },
   function (t, e, n) {
     "use strict";
-    n(8).define(
+    n(4).define(
       "touch",
       (t.exports = function (t) {
         var e = {},
@@ -10224,8 +10302,8 @@
   },
   function (t, e, n) {
     "use strict";
-    var r = n(1)(n(336)),
-      i = n(8);
+    var r = n(1)(n(338)),
+      i = n(4);
     i.define(
       "forms",
       (t.exports = function (t, e) {
@@ -10276,7 +10354,21 @@
                   g = p.attr("data-w-size-error"),
                   y = p.attr("data-w-type-error"),
                   m = p.attr("data-w-generic-error");
-                if (_)
+                if (
+                  (l.on("click keydown", function (t) {
+                    ("keydown" === t.type &&
+                      13 !== t.which &&
+                      32 !== t.which) ||
+                      (t.preventDefault(), f.click());
+                  }),
+                  l
+                    .find(".w-icon-file-upload-icon")
+                    .attr("aria-hidden", "true"),
+                  h
+                    .find(".w-icon-file-upload-remove")
+                    .attr("aria-hidden", "true"),
+                  _)
+                )
                   f.on("click", function (t) {
                     t.preventDefault();
                   }),
@@ -10287,18 +10379,24 @@
                       t.preventDefault();
                     });
                 else {
-                  h.on("click", function () {
+                  h.on("click keydown", function (t) {
+                    if ("keydown" === t.type) {
+                      if (13 !== t.which && 32 !== t.which) return;
+                      t.preventDefault();
+                    }
                     f.removeAttr("data-value"),
                       f.val(""),
                       E.html(""),
                       o.toggle(!0),
-                      u.toggle(!1);
+                      u.toggle(!1),
+                      l.focus();
                   }),
                     f.on("change", function (i) {
                       (r = i.target && i.target.files && i.target.files[0]) &&
                         (o.toggle(!1),
                         s.toggle(!1),
                         a.toggle(!0),
+                        a.focus(),
                         E.text(r.name),
                         S() || T(n),
                         (n.fileUploads[e].uploading = !0),
@@ -10337,6 +10435,7 @@
                     a.toggle(!1),
                     o.toggle(!0),
                     s.toggle(!0),
+                    s.focus(),
                     (n.fileUploads[e].uploading = !1),
                     S() || I(n);
                 }
@@ -10371,6 +10470,7 @@
                   if (t) return O(t);
                   a.toggle(!1),
                     u.css("display", "inline-block"),
+                    u.focus(),
                     (n.fileUploads[e].uploading = !1),
                     S() || I(n);
                 }
@@ -10528,7 +10628,13 @@
                           function (e) {
                             t(e.target)
                               .siblings(o)
-                              .addClass("w--redirected-focus");
+                              .addClass("w--redirected-focus"),
+                              t(e.target)
+                                .filter(
+                                  ":focus-visible, [data-wf-focus-visible]"
+                                )
+                                .siblings(o)
+                                .addClass("w--redirected-focus-visible");
                           }
                         ),
                           f.on(
@@ -10540,7 +10646,11 @@
                             function (e) {
                               t(e.target)
                                 .siblings(o)
-                                .removeClass("w--redirected-focus");
+                                .removeClass(
+                                  ""
+                                    .concat("w--redirected-focus", " ")
+                                    .concat("w--redirected-focus-visible")
+                                );
                             }
                           );
                       });
@@ -10665,9 +10775,9 @@
     );
   },
   function (t, e, n) {
-    var r = n(337),
-      i = n(338),
-      o = n(339);
+    var r = n(339),
+      i = n(340),
+      o = n(341);
     t.exports = function (t, e) {
       return r(t) || i(t, e) || o();
     };
@@ -10882,90 +10992,6 @@ Webflow.require("ix2").init({
         effectIn: null,
       },
       createdOn: 1640699788587,
-    },
-    "e-8": {
-      id: "e-8",
-      name: "",
-      animationType: "custom",
-      eventTypeId: "SCROLL_INTO_VIEW",
-      action: {
-        id: "",
-        actionTypeId: "GENERAL_START_ACTION",
-        config: {
-          delay: 0,
-          easing: "",
-          duration: 0,
-          actionListId: "a-8",
-          affectedElements: {},
-          playInReverse: false,
-          autoStopEventId: "e-9",
-        },
-      },
-      mediaQueries: ["main", "medium", "small", "tiny"],
-      target: {
-        id: "612cbcbc78946b832b877330|37d8ecea-089b-0696-042e-2b82033d81fe",
-        appliesTo: "ELEMENT",
-        styleBlockIds: [],
-      },
-      targets: [
-        {
-          id: "612cbcbc78946b832b877330|37d8ecea-089b-0696-042e-2b82033d81fe",
-          appliesTo: "ELEMENT",
-          styleBlockIds: [],
-        },
-      ],
-      config: {
-        loop: false,
-        playInReverse: false,
-        scrollOffsetValue: 50,
-        scrollOffsetUnit: "%",
-        delay: null,
-        direction: null,
-        effectIn: null,
-      },
-      createdOn: 1640711549085,
-    },
-    "e-9": {
-      id: "e-9",
-      name: "",
-      animationType: "custom",
-      eventTypeId: "SCROLL_OUT_OF_VIEW",
-      action: {
-        id: "",
-        actionTypeId: "GENERAL_START_ACTION",
-        config: {
-          delay: 0,
-          easing: "",
-          duration: 0,
-          actionListId: "a-9",
-          affectedElements: {},
-          playInReverse: false,
-          autoStopEventId: "e-8",
-        },
-      },
-      mediaQueries: ["main", "medium", "small", "tiny"],
-      target: {
-        id: "612cbcbc78946b832b877330|37d8ecea-089b-0696-042e-2b82033d81fe",
-        appliesTo: "ELEMENT",
-        styleBlockIds: [],
-      },
-      targets: [
-        {
-          id: "612cbcbc78946b832b877330|37d8ecea-089b-0696-042e-2b82033d81fe",
-          appliesTo: "ELEMENT",
-          styleBlockIds: [],
-        },
-      ],
-      config: {
-        loop: false,
-        playInReverse: false,
-        scrollOffsetValue: 30,
-        scrollOffsetUnit: "%",
-        delay: null,
-        direction: null,
-        effectIn: null,
-      },
-      createdOn: 1640711549086,
     },
     "e-10": {
       id: "e-10",
@@ -11448,7 +11474,7 @@ Webflow.require("ix2").init({
           selectedAxis: "X_AXIS",
           basedOn: "VIEWPORT",
           reverse: false,
-          smoothing: 30,
+          smoothing: 10,
           restingState: 50,
         },
         {
@@ -11456,7 +11482,7 @@ Webflow.require("ix2").init({
           selectedAxis: "Y_AXIS",
           basedOn: "VIEWPORT",
           reverse: false,
-          smoothing: 30,
+          smoothing: 10,
           restingState: 50,
         },
       ],
@@ -11491,7 +11517,7 @@ Webflow.require("ix2").init({
           selectedAxis: "X_AXIS",
           basedOn: "VIEWPORT",
           reverse: false,
-          smoothing: 90,
+          smoothing: 85,
           restingState: 50,
         },
         {
@@ -11499,7 +11525,7 @@ Webflow.require("ix2").init({
           selectedAxis: "Y_AXIS",
           basedOn: "VIEWPORT",
           reverse: false,
-          smoothing: 90,
+          smoothing: 85,
           restingState: 50,
         },
       ],
@@ -11939,13 +11965,19 @@ Webflow.require("ix2").init({
         actionTypeId: "GENERAL_CONTINUOUS_ACTION",
         config: { actionListId: "a-33", affectedElements: {}, duration: 0 },
       },
-      mediaQueries: ["main", "medium", "small", "tiny"],
+      mediaQueries: ["main"],
       target: {
+        id: "612cbcbc78946b832b877330|37d8ecea-089b-0696-042e-2b82033d81fe",
         appliesTo: "ELEMENT",
         styleBlockIds: [],
-        id: "612cbcbc78946b832b877330|37d8ecea-089b-0696-042e-2b82033d81fe",
       },
-      targets: [],
+      targets: [
+        {
+          id: "612cbcbc78946b832b877330|37d8ecea-089b-0696-042e-2b82033d81fe",
+          appliesTo: "ELEMENT",
+          styleBlockIds: [],
+        },
+      ],
       config: [
         {
           continuousParameterGroupId: "a-33-p",
@@ -11965,6 +11997,261 @@ Webflow.require("ix2").init({
         },
       ],
       createdOn: 1641639753945,
+    },
+    "e-47": {
+      id: "e-47",
+      name: "",
+      animationType: "custom",
+      eventTypeId: "MOUSE_MOVE",
+      action: {
+        id: "",
+        actionTypeId: "GENERAL_CONTINUOUS_ACTION",
+        config: { actionListId: "a-34", affectedElements: {}, duration: 0 },
+      },
+      mediaQueries: ["main"],
+      target: {
+        id: "612cbcbc78946b832b877330|8de4d022-7ece-90a4-d54d-e98595add83e",
+        appliesTo: "ELEMENT",
+        styleBlockIds: [],
+      },
+      targets: [
+        {
+          id: "612cbcbc78946b832b877330|8de4d022-7ece-90a4-d54d-e98595add83e",
+          appliesTo: "ELEMENT",
+          styleBlockIds: [],
+        },
+      ],
+      config: [
+        {
+          continuousParameterGroupId: "a-34-p",
+          selectedAxis: "X_AXIS",
+          basedOn: "ELEMENT",
+          reverse: false,
+          smoothing: 50,
+          restingState: 50,
+        },
+        {
+          continuousParameterGroupId: "a-34-p-2",
+          selectedAxis: "Y_AXIS",
+          basedOn: "ELEMENT",
+          reverse: false,
+          smoothing: 50,
+          restingState: 50,
+        },
+      ],
+      createdOn: 1641835746102,
+    },
+    "e-48": {
+      id: "e-48",
+      name: "",
+      animationType: "custom",
+      eventTypeId: "MOUSE_MOVE",
+      action: {
+        id: "",
+        actionTypeId: "GENERAL_CONTINUOUS_ACTION",
+        config: { actionListId: "a-34", affectedElements: {}, duration: 0 },
+      },
+      mediaQueries: ["main"],
+      target: {
+        id: "612cbcbc78946b832b877330|598d7157-1f49-a2bd-f807-372eb05fe14c",
+        appliesTo: "ELEMENT",
+        styleBlockIds: [],
+      },
+      targets: [
+        {
+          id: "612cbcbc78946b832b877330|598d7157-1f49-a2bd-f807-372eb05fe14c",
+          appliesTo: "ELEMENT",
+          styleBlockIds: [],
+        },
+      ],
+      config: [
+        {
+          continuousParameterGroupId: "a-34-p",
+          selectedAxis: "X_AXIS",
+          basedOn: "ELEMENT",
+          reverse: false,
+          smoothing: 50,
+          restingState: 50,
+        },
+        {
+          continuousParameterGroupId: "a-34-p-2",
+          selectedAxis: "Y_AXIS",
+          basedOn: "ELEMENT",
+          reverse: false,
+          smoothing: 50,
+          restingState: 50,
+        },
+      ],
+      createdOn: 1641836150805,
+    },
+    "e-49": {
+      id: "e-49",
+      name: "",
+      animationType: "custom",
+      eventTypeId: "MOUSE_OVER",
+      action: {
+        id: "",
+        actionTypeId: "GENERAL_START_ACTION",
+        config: {
+          delay: 0,
+          easing: "",
+          duration: 0,
+          actionListId: "a-35",
+          affectedElements: {},
+          playInReverse: false,
+          autoStopEventId: "e-50",
+        },
+      },
+      mediaQueries: ["main", "medium", "small", "tiny"],
+      target: {
+        id: "612cbcbc78946b832b877330|0e38cdd1-a45b-87fe-34bc-fbac4518b9ea",
+        appliesTo: "ELEMENT",
+        styleBlockIds: [],
+      },
+      targets: [
+        {
+          id: "612cbcbc78946b832b877330|0e38cdd1-a45b-87fe-34bc-fbac4518b9ea",
+          appliesTo: "ELEMENT",
+          styleBlockIds: [],
+        },
+      ],
+      config: {
+        loop: false,
+        playInReverse: false,
+        scrollOffsetValue: null,
+        scrollOffsetUnit: null,
+        delay: null,
+        direction: null,
+        effectIn: null,
+      },
+      createdOn: 1641842942954,
+    },
+    "e-50": {
+      id: "e-50",
+      name: "",
+      animationType: "custom",
+      eventTypeId: "MOUSE_OUT",
+      action: {
+        id: "",
+        actionTypeId: "GENERAL_START_ACTION",
+        config: {
+          delay: 0,
+          easing: "",
+          duration: 0,
+          actionListId: "a-38",
+          affectedElements: {},
+          playInReverse: false,
+          autoStopEventId: "e-49",
+        },
+      },
+      mediaQueries: ["main", "medium", "small", "tiny"],
+      target: {
+        id: "612cbcbc78946b832b877330|0e38cdd1-a45b-87fe-34bc-fbac4518b9ea",
+        appliesTo: "ELEMENT",
+        styleBlockIds: [],
+      },
+      targets: [
+        {
+          id: "612cbcbc78946b832b877330|0e38cdd1-a45b-87fe-34bc-fbac4518b9ea",
+          appliesTo: "ELEMENT",
+          styleBlockIds: [],
+        },
+      ],
+      config: {
+        loop: false,
+        playInReverse: false,
+        scrollOffsetValue: null,
+        scrollOffsetUnit: null,
+        delay: null,
+        direction: null,
+        effectIn: null,
+      },
+      createdOn: 1641842942956,
+    },
+    "e-51": {
+      id: "e-51",
+      name: "",
+      animationType: "custom",
+      eventTypeId: "MOUSE_MOVE",
+      action: {
+        id: "",
+        actionTypeId: "GENERAL_CONTINUOUS_ACTION",
+        config: { actionListId: "a-36", affectedElements: {}, duration: 0 },
+      },
+      mediaQueries: ["main", "medium", "small", "tiny"],
+      target: {
+        id: "612cbcbc78946b832b877330|0e38cdd1-a45b-87fe-34bc-fbac4518b9ea",
+        appliesTo: "ELEMENT",
+        styleBlockIds: [],
+      },
+      targets: [
+        {
+          id: "612cbcbc78946b832b877330|0e38cdd1-a45b-87fe-34bc-fbac4518b9ea",
+          appliesTo: "ELEMENT",
+          styleBlockIds: [],
+        },
+      ],
+      config: [
+        {
+          continuousParameterGroupId: "a-36-p",
+          selectedAxis: "X_AXIS",
+          basedOn: "ELEMENT",
+          reverse: false,
+          smoothing: 50,
+          restingState: 50,
+        },
+        {
+          continuousParameterGroupId: "a-36-p-2",
+          selectedAxis: "Y_AXIS",
+          basedOn: "ELEMENT",
+          reverse: false,
+          smoothing: 50,
+          restingState: 50,
+        },
+      ],
+      createdOn: 1641843055261,
+    },
+    "e-52": {
+      id: "e-52",
+      name: "",
+      animationType: "custom",
+      eventTypeId: "PAGE_START",
+      action: {
+        id: "",
+        actionTypeId: "GENERAL_START_ACTION",
+        config: {
+          delay: 0,
+          easing: "",
+          duration: 0,
+          actionListId: "a-37",
+          affectedElements: {},
+          playInReverse: false,
+          autoStopEventId: "e-53",
+        },
+      },
+      mediaQueries: ["main", "medium", "small", "tiny"],
+      target: {
+        id: "612cbcbc78946b832b877330",
+        appliesTo: "PAGE",
+        styleBlockIds: [],
+      },
+      targets: [
+        {
+          id: "612cbcbc78946b832b877330",
+          appliesTo: "PAGE",
+          styleBlockIds: [],
+        },
+      ],
+      config: {
+        loop: true,
+        playInReverse: false,
+        scrollOffsetValue: null,
+        scrollOffsetUnit: null,
+        delay: null,
+        direction: null,
+        effectIn: null,
+      },
+      createdOn: 1641878495069,
     },
   },
   actionLists: {
@@ -12864,7 +13151,7 @@ Webflow.require("ix2").init({
               ],
             },
             {
-              keyframe: 25,
+              keyframe: 33,
               actionItems: [
                 {
                   id: "a-13-n-3",
@@ -12888,31 +13175,7 @@ Webflow.require("ix2").init({
               ],
             },
             {
-              keyframe: 50,
-              actionItems: [
-                {
-                  id: "a-13-n-4",
-                  actionTypeId: "STYLE_BACKGROUND_COLOR",
-                  config: {
-                    delay: 0,
-                    easing: "",
-                    duration: 500,
-                    target: {
-                      useEventTarget: "CHILDREN",
-                      selector: ".camera-gallery",
-                      selectorGuids: ["0dd604c0-c559-13bc-5a51-3568756e4ce2"],
-                    },
-                    globalSwatchId: "1bd2acfa",
-                    rValue: 238,
-                    bValue: 238,
-                    gValue: 238,
-                    aValue: 1,
-                  },
-                },
-              ],
-            },
-            {
-              keyframe: 75,
+              keyframe: 66,
               actionItems: [
                 {
                   id: "a-13-n-5",
@@ -12993,6 +13256,22 @@ Webflow.require("ix2").init({
                     zUnit: "PX",
                   },
                 },
+                {
+                  id: "a-n-5",
+                  actionTypeId: "TRANSFORM_MOVE",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      id: "612cbcbc78946b832b877330|61c30bdf-4cc1-5fbd-c79e-5dce2dbf27d2",
+                    },
+                    xValue: -50,
+                    xUnit: "vw",
+                    yUnit: "PX",
+                    zUnit: "PX",
+                  },
+                },
               ],
             },
             {
@@ -13008,6 +13287,22 @@ Webflow.require("ix2").init({
                     target: {
                       selector: ".cursor",
                       selectorGuids: ["7b7c85d2-78f6-8e11-6519-d0c4c6abea71"],
+                    },
+                    xValue: 50,
+                    xUnit: "vw",
+                    yUnit: "PX",
+                    zUnit: "PX",
+                  },
+                },
+                {
+                  id: "a-n-6",
+                  actionTypeId: "TRANSFORM_MOVE",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      id: "612cbcbc78946b832b877330|61c30bdf-4cc1-5fbd-c79e-5dce2dbf27d2",
                     },
                     xValue: 50,
                     xUnit: "vw",
@@ -13044,6 +13339,22 @@ Webflow.require("ix2").init({
                     zUnit: "PX",
                   },
                 },
+                {
+                  id: "a-n-7",
+                  actionTypeId: "TRANSFORM_MOVE",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      id: "612cbcbc78946b832b877330|61c30bdf-4cc1-5fbd-c79e-5dce2dbf27d2",
+                    },
+                    yValue: -50,
+                    xUnit: "PX",
+                    yUnit: "vh",
+                    zUnit: "PX",
+                  },
+                },
               ],
             },
             {
@@ -13059,6 +13370,22 @@ Webflow.require("ix2").init({
                     target: {
                       selector: ".cursor",
                       selectorGuids: ["7b7c85d2-78f6-8e11-6519-d0c4c6abea71"],
+                    },
+                    yValue: 50,
+                    xUnit: "PX",
+                    yUnit: "vh",
+                    zUnit: "PX",
+                  },
+                },
+                {
+                  id: "a-n-8",
+                  actionTypeId: "TRANSFORM_MOVE",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      id: "612cbcbc78946b832b877330|61c30bdf-4cc1-5fbd-c79e-5dce2dbf27d2",
                     },
                     yValue: 50,
                     xUnit: "PX",
@@ -14502,7 +14829,6 @@ Webflow.require("ix2").init({
                     delay: 0,
                     easing: "",
                     duration: 500,
-                    locked: false,
                     target: {
                       useEventTarget: "CHILDREN",
                       selector: ".div-block-18",
@@ -14511,6 +14837,7 @@ Webflow.require("ix2").init({
                     widthValue: 100,
                     widthUnit: "vw",
                     heightUnit: "px",
+                    locked: false,
                   },
                 },
                 {
@@ -14520,7 +14847,6 @@ Webflow.require("ix2").init({
                     delay: 0,
                     easing: "",
                     duration: 500,
-                    locked: false,
                     target: {
                       useEventTarget: "CHILDREN",
                       selector: ".div-block-19",
@@ -14529,6 +14855,7 @@ Webflow.require("ix2").init({
                     widthValue: 0,
                     widthUnit: "vw",
                     heightUnit: "PX",
+                    locked: false,
                   },
                 },
               ],
@@ -14543,7 +14870,6 @@ Webflow.require("ix2").init({
                     delay: 0,
                     easing: "",
                     duration: 500,
-                    locked: false,
                     target: {
                       useEventTarget: "CHILDREN",
                       selector: ".div-block-18",
@@ -14552,6 +14878,7 @@ Webflow.require("ix2").init({
                     widthValue: 0,
                     widthUnit: "vw",
                     heightUnit: "PX",
+                    locked: false,
                   },
                 },
                 {
@@ -14561,7 +14888,6 @@ Webflow.require("ix2").init({
                     delay: 0,
                     easing: "",
                     duration: 500,
-                    locked: false,
                     target: {
                       useEventTarget: "CHILDREN",
                       selector: ".div-block-19",
@@ -14570,6 +14896,7 @@ Webflow.require("ix2").init({
                     widthValue: 100,
                     widthUnit: "vw",
                     heightUnit: "PX",
+                    locked: false,
                   },
                 },
               ],
@@ -14584,6 +14911,440 @@ Webflow.require("ix2").init({
         },
       ],
       createdOn: 1641639071039,
+    },
+    "a-34": {
+      id: "a-34",
+      title: "Skill_Gallery_Motion",
+      continuousParameterGroups: [
+        {
+          id: "a-34-p",
+          type: "MOUSE_X",
+          parameterLabel: "Mouse X",
+          continuousActionGroups: [
+            {
+              keyframe: 0,
+              actionItems: [
+                {
+                  id: "a-34-n",
+                  actionTypeId: "TRANSFORM_MOVE",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      useEventTarget: "CHILDREN",
+                      selector: ".grapghics_back_images",
+                      selectorGuids: ["d883a3b9-91d7-8624-a83e-99f4b373a623"],
+                    },
+                    xValue: 10,
+                    xUnit: "px",
+                    yUnit: "PX",
+                    zUnit: "PX",
+                  },
+                },
+                {
+                  id: "a-34-n-13",
+                  actionTypeId: "TRANSFORM_MOVE",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      useEventTarget: "CHILDREN",
+                      selector: ".photo_back_images",
+                      selectorGuids: ["3358bdf9-8924-424a-4867-cc22f01d97ac"],
+                    },
+                    xValue: 10,
+                    xUnit: "px",
+                    yUnit: "PX",
+                    zUnit: "PX",
+                  },
+                },
+              ],
+            },
+            {
+              keyframe: 100,
+              actionItems: [
+                {
+                  id: "a-34-n-2",
+                  actionTypeId: "TRANSFORM_MOVE",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      useEventTarget: "CHILDREN",
+                      selector: ".grapghics_back_images",
+                      selectorGuids: ["d883a3b9-91d7-8624-a83e-99f4b373a623"],
+                    },
+                    xValue: -10,
+                    xUnit: "px",
+                    yUnit: "PX",
+                    zUnit: "PX",
+                  },
+                },
+                {
+                  id: "a-34-n-14",
+                  actionTypeId: "TRANSFORM_MOVE",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      useEventTarget: "CHILDREN",
+                      selector: ".photo_back_images",
+                      selectorGuids: ["3358bdf9-8924-424a-4867-cc22f01d97ac"],
+                    },
+                    xValue: -10,
+                    xUnit: "px",
+                    yUnit: "PX",
+                    zUnit: "PX",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+        {
+          id: "a-34-p-2",
+          type: "MOUSE_Y",
+          parameterLabel: "Mouse Y",
+          continuousActionGroups: [
+            {
+              keyframe: 0,
+              actionItems: [
+                {
+                  id: "a-34-n-5",
+                  actionTypeId: "TRANSFORM_MOVE",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      useEventTarget: "CHILDREN",
+                      selector: ".grapghics_back_images",
+                      selectorGuids: ["d883a3b9-91d7-8624-a83e-99f4b373a623"],
+                    },
+                    yValue: 10,
+                    xUnit: "PX",
+                    yUnit: "px",
+                    zUnit: "PX",
+                  },
+                },
+                {
+                  id: "a-34-n-15",
+                  actionTypeId: "TRANSFORM_MOVE",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      useEventTarget: "CHILDREN",
+                      selector: ".photo_back_images",
+                      selectorGuids: ["3358bdf9-8924-424a-4867-cc22f01d97ac"],
+                    },
+                    yValue: 10,
+                    xUnit: "PX",
+                    yUnit: "px",
+                    zUnit: "PX",
+                  },
+                },
+              ],
+            },
+            {
+              keyframe: 100,
+              actionItems: [
+                {
+                  id: "a-34-n-7",
+                  actionTypeId: "TRANSFORM_MOVE",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      useEventTarget: "CHILDREN",
+                      selector: ".grapghics_back_images",
+                      selectorGuids: ["d883a3b9-91d7-8624-a83e-99f4b373a623"],
+                    },
+                    xValue: null,
+                    yValue: -10,
+                    xUnit: "px",
+                    yUnit: "px",
+                    zUnit: "PX",
+                  },
+                },
+                {
+                  id: "a-34-n-16",
+                  actionTypeId: "TRANSFORM_MOVE",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      useEventTarget: "CHILDREN",
+                      selector: ".photo_back_images",
+                      selectorGuids: ["3358bdf9-8924-424a-4867-cc22f01d97ac"],
+                    },
+                    yValue: -10,
+                    xUnit: "PX",
+                    yUnit: "px",
+                    zUnit: "PX",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      createdOn: 1641835781907,
+    },
+    "a-35": {
+      id: "a-35",
+      title: "Cursor Hover link in",
+      actionItemGroups: [
+        {
+          actionItems: [
+            {
+              id: "a-35-n-2",
+              actionTypeId: "STYLE_OPACITY",
+              config: {
+                delay: 0,
+                easing: "",
+                duration: 500,
+                target: {
+                  selector: ".image-16",
+                  selectorGuids: ["ff05bd17-49ce-3cd6-7936-d37b50b09052"],
+                },
+                value: 0,
+                unit: "",
+              },
+            },
+            {
+              id: "a-35-n",
+              actionTypeId: "GENERAL_DISPLAY",
+              config: {
+                delay: 0,
+                easing: "",
+                duration: 0,
+                target: {
+                  selector: ".image-16",
+                  selectorGuids: ["ff05bd17-49ce-3cd6-7936-d37b50b09052"],
+                },
+                value: "none",
+              },
+            },
+          ],
+        },
+        {
+          actionItems: [
+            {
+              id: "a-35-n-3",
+              actionTypeId: "GENERAL_DISPLAY",
+              config: {
+                delay: 0,
+                easing: "",
+                duration: 0,
+                target: {
+                  selector: ".image-16",
+                  selectorGuids: ["ff05bd17-49ce-3cd6-7936-d37b50b09052"],
+                },
+                value: "block",
+              },
+            },
+            {
+              id: "a-35-n-5",
+              actionTypeId: "STYLE_OPACITY",
+              config: {
+                delay: 0,
+                easing: "",
+                duration: 200,
+                target: {
+                  selector: ".cursor_outer",
+                  selectorGuids: ["35a11d7f-e343-153e-3876-b7f6e54b8ed0"],
+                },
+                value: 0,
+                unit: "",
+              },
+            },
+            {
+              id: "a-35-n-4",
+              actionTypeId: "STYLE_OPACITY",
+              config: {
+                delay: 0,
+                easing: "",
+                duration: 200,
+                target: {
+                  selector: ".image-16",
+                  selectorGuids: ["ff05bd17-49ce-3cd6-7936-d37b50b09052"],
+                },
+                value: 1,
+                unit: "",
+              },
+            },
+          ],
+        },
+      ],
+      useFirstGroupAsInitialState: true,
+      createdOn: 1641842990846,
+    },
+    "a-38": {
+      id: "a-38",
+      title: "Cursor Hover link out",
+      actionItemGroups: [
+        {
+          actionItems: [
+            {
+              id: "a-38-n-4",
+              actionTypeId: "STYLE_OPACITY",
+              config: {
+                delay: 0,
+                easing: "",
+                duration: 500,
+                target: {
+                  selector: ".image-16",
+                  selectorGuids: ["ff05bd17-49ce-3cd6-7936-d37b50b09052"],
+                },
+                value: 0,
+                unit: "",
+              },
+            },
+            {
+              id: "a-38-n-5",
+              actionTypeId: "STYLE_OPACITY",
+              config: {
+                delay: 0,
+                easing: "",
+                duration: 500,
+                target: {
+                  selector: ".cursor_outer",
+                  selectorGuids: ["35a11d7f-e343-153e-3876-b7f6e54b8ed0"],
+                },
+                value: 1,
+                unit: "",
+              },
+            },
+          ],
+        },
+        {
+          actionItems: [
+            {
+              id: "a-38-n-3",
+              actionTypeId: "GENERAL_DISPLAY",
+              config: {
+                delay: 0,
+                easing: "",
+                duration: 0,
+                target: {
+                  selector: ".image-16",
+                  selectorGuids: ["ff05bd17-49ce-3cd6-7936-d37b50b09052"],
+                },
+                value: "none",
+              },
+            },
+          ],
+        },
+      ],
+      useFirstGroupAsInitialState: false,
+      createdOn: 1641842990846,
+    },
+    "a-36": {
+      id: "a-36",
+      title: "cursor hover link",
+      continuousParameterGroups: [
+        {
+          id: "a-36-p",
+          type: "MOUSE_X",
+          parameterLabel: "Mouse X",
+          continuousActionGroups: [],
+        },
+        {
+          id: "a-36-p-2",
+          type: "MOUSE_Y",
+          parameterLabel: "Mouse Y",
+          continuousActionGroups: [],
+        },
+      ],
+      createdOn: 1641843060436,
+    },
+    "a-37": {
+      id: "a-37",
+      title: "Click me Rotate",
+      actionItemGroups: [
+        {
+          actionItems: [
+            {
+              id: "a-37-n",
+              actionTypeId: "TRANSFORM_ROTATE",
+              config: {
+                delay: 0,
+                easing: "",
+                duration: 4000,
+                target: {
+                  id: "612cbcbc78946b832b877330|61c30bdf-4cc1-5fbd-c79e-5dce2dbf27d2",
+                },
+                zValue: 360,
+                xUnit: "DEG",
+                yUnit: "DEG",
+                zUnit: "deg",
+              },
+            },
+            {
+              id: "a-37-n-3",
+              actionTypeId: "TRANSFORM_ROTATE",
+              config: {
+                delay: 0,
+                easing: "",
+                duration: 4000,
+                target: {
+                  id: "612cbcbc78946b832b877330|048f5a65-bf90-b7d9-9b63-de5646dcadaa",
+                },
+                zValue: 360,
+                xUnit: "DEG",
+                yUnit: "DEG",
+                zUnit: "deg",
+              },
+            },
+          ],
+        },
+        {
+          actionItems: [
+            {
+              id: "a-37-n-2",
+              actionTypeId: "TRANSFORM_ROTATE",
+              config: {
+                delay: 0,
+                easing: "",
+                duration: 0,
+                target: {
+                  id: "612cbcbc78946b832b877330|61c30bdf-4cc1-5fbd-c79e-5dce2dbf27d2",
+                },
+                zValue: 0,
+                xUnit: "DEG",
+                yUnit: "DEG",
+                zUnit: "deg",
+              },
+            },
+            {
+              id: "a-37-n-4",
+              actionTypeId: "TRANSFORM_ROTATE",
+              config: {
+                delay: 0,
+                easing: "",
+                duration: 0,
+                target: {
+                  id: "612cbcbc78946b832b877330|048f5a65-bf90-b7d9-9b63-de5646dcadaa",
+                },
+                zValue: 0,
+                xUnit: "DEG",
+                yUnit: "DEG",
+                zUnit: "deg",
+              },
+            },
+          ],
+        },
+      ],
+      useFirstGroupAsInitialState: false,
+      createdOn: 1641878507403,
     },
   },
   site: {
