@@ -4682,12 +4682,6 @@
             i = r.env("editor");
           n ? i && t.remove() : (t.length && t.remove(), i || a.append(e));
         }
-        return (
-          (n.ready = function () {
-            
-          }),
-          n
-        );
       })
     );
   },
@@ -12253,6 +12247,218 @@ Webflow.require("ix2").init({
       },
       createdOn: 1641878495069,
     },
+    "e-54": {
+      id: "e-54",
+      name: "",
+      animationType: "custom",
+      eventTypeId: "PAGE_SCROLL",
+      action: {
+        id: "",
+        actionTypeId: "GENERAL_CONTINUOUS_ACTION",
+        config: { actionListId: "a-39", affectedElements: {}, duration: 0 },
+      },
+      mediaQueries: ["main", "medium", "small", "tiny"],
+      target: {
+        appliesTo: "PAGE",
+        styleBlockIds: [],
+        id: "612cbcbc78946b832b877330",
+      },
+      targets: [],
+      config: [
+        {
+          continuousParameterGroupId: "a-39-p",
+          smoothing: 50,
+          startsEntering: true,
+          addStartOffset: false,
+          addOffsetValue: 50,
+          startsExiting: false,
+          addEndOffset: false,
+          endOffsetValue: 50,
+        },
+      ],
+      createdOn: 1644139965599,
+    },
+    "e-55": {
+      id: "e-55",
+      name: "",
+      animationType: "preset",
+      eventTypeId: "MOUSE_OVER",
+      action: {
+        id: "",
+        actionTypeId: "GENERAL_START_ACTION",
+        config: {
+          delay: 0,
+          easing: "",
+          duration: 0,
+          actionListId: "a-35",
+          affectedElements: {},
+          playInReverse: false,
+          autoStopEventId: "e-56",
+        },
+      },
+      mediaQueries: ["main", "medium", "small", "tiny"],
+      target: {
+        id: "61d71499618c94a1888a4fa7|9e429305-b3f0-593e-25f9-2ad9b56cf4e3",
+        appliesTo: "ELEMENT",
+        styleBlockIds: [],
+      },
+      targets: [],
+      config: {
+        loop: false,
+        playInReverse: false,
+        scrollOffsetValue: null,
+        scrollOffsetUnit: null,
+        delay: null,
+        direction: null,
+        effectIn: null,
+      },
+      createdOn: 1644147756655,
+    },
+    "e-56": {
+      id: "e-56",
+      name: "",
+      animationType: "preset",
+      eventTypeId: "MOUSE_OUT",
+      action: {
+        id: "",
+        actionTypeId: "GENERAL_START_ACTION",
+        config: {
+          delay: 0,
+          easing: "",
+          duration: 0,
+          actionListId: "a-38",
+          affectedElements: {},
+          playInReverse: false,
+          autoStopEventId: "e-55",
+        },
+      },
+      mediaQueries: ["main", "medium", "small", "tiny"],
+      target: {
+        id: "61d71499618c94a1888a4fa7|9e429305-b3f0-593e-25f9-2ad9b56cf4e3",
+        appliesTo: "ELEMENT",
+        styleBlockIds: [],
+      },
+      targets: [],
+      config: {
+        loop: false,
+        playInReverse: false,
+        scrollOffsetValue: null,
+        scrollOffsetUnit: null,
+        delay: null,
+        direction: null,
+        effectIn: null,
+      },
+      createdOn: 1644147756655,
+    },
+    "e-57": {
+      id: "e-57",
+      name: "",
+      animationType: "preset",
+      eventTypeId: "MOUSE_MOVE",
+      action: {
+        id: "",
+        actionTypeId: "GENERAL_CONTINUOUS_ACTION",
+        config: { actionListId: "a-36", affectedElements: {}, duration: 0 },
+      },
+      mediaQueries: ["main", "medium", "small", "tiny"],
+      target: {
+        id: "61d71499618c94a1888a4fa7|9e429305-b3f0-593e-25f9-2ad9b56cf4e3",
+        appliesTo: "ELEMENT",
+        styleBlockIds: [],
+      },
+      targets: [],
+      config: [
+        {
+          continuousParameterGroupId: "a-36-p",
+          selectedAxis: "X_AXIS",
+          basedOn: "ELEMENT",
+          reverse: false,
+          smoothing: 50,
+          restingState: 50,
+        },
+        {
+          continuousParameterGroupId: "a-36-p-2",
+          selectedAxis: "Y_AXIS",
+          basedOn: "ELEMENT",
+          reverse: false,
+          smoothing: 50,
+          restingState: 50,
+        },
+      ],
+      createdOn: 1644147756655,
+    },
+    "e-58": {
+      id: "e-58",
+      name: "",
+      animationType: "preset",
+      eventTypeId: "MOUSE_CLICK",
+      action: {
+        id: "",
+        actionTypeId: "GENERAL_START_ACTION",
+        config: {
+          delay: 0,
+          easing: "",
+          duration: 0,
+          actionListId: "a-3",
+          affectedElements: {},
+          playInReverse: false,
+          autoStopEventId: "e-59",
+        },
+      },
+      mediaQueries: ["main", "medium", "small", "tiny"],
+      target: {
+        id: "61d71499618c94a1888a4fa7|9e429305-b3f0-593e-25f9-2ad9b56cf4e3",
+        appliesTo: "ELEMENT",
+        styleBlockIds: [],
+      },
+      targets: [],
+      config: {
+        loop: false,
+        playInReverse: false,
+        scrollOffsetValue: null,
+        scrollOffsetUnit: null,
+        delay: null,
+        direction: null,
+        effectIn: null,
+      },
+      createdOn: 1644147756655,
+    },
+    "e-59": {
+      id: "e-59",
+      name: "",
+      animationType: "preset",
+      eventTypeId: "MOUSE_SECOND_CLICK",
+      action: {
+        id: "",
+        actionTypeId: "GENERAL_START_ACTION",
+        config: {
+          delay: 0,
+          easing: "",
+          duration: 0,
+          actionListId: "a-5",
+          affectedElements: {},
+          playInReverse: false,
+          autoStopEventId: "e-58",
+        },
+      },
+      mediaQueries: ["main", "medium", "small", "tiny"],
+      target: {
+        id: "61d71499618c94a1888a4fa7|9e429305-b3f0-593e-25f9-2ad9b56cf4e3",
+        appliesTo: "ELEMENT",
+        styleBlockIds: [],
+      },
+      targets: [],
+      config: {
+        loop: false,
+        playInReverse: false,
+        scrollOffsetValue: null,
+        scrollOffsetUnit: null,
+        delay: null,
+        direction: null,
+        effectIn: null,
+      },
+      createdOn: 1644147756655,
+    },
   },
   actionLists: {
     "a-3": {
@@ -15345,6 +15551,62 @@ Webflow.require("ix2").init({
       ],
       useFirstGroupAsInitialState: false,
       createdOn: 1641878507403,
+    },
+    "a-39": {
+      id: "a-39",
+      title: "scroll indicator",
+      continuousParameterGroups: [
+        {
+          id: "a-39-p",
+          type: "SCROLL_PROGRESS",
+          parameterLabel: "Scroll",
+          continuousActionGroups: [
+            {
+              keyframe: 0,
+              actionItems: [
+                {
+                  id: "a-39-n",
+                  actionTypeId: "TRANSFORM_MOVE",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      id: "612cbcbc78946b832b877330|f997fd9a-f91f-e2c2-ec5c-636fd6a16f4d",
+                    },
+                    yValue: -15,
+                    xUnit: "PX",
+                    yUnit: "vh",
+                    zUnit: "PX",
+                  },
+                },
+              ],
+            },
+            {
+              keyframe: 100,
+              actionItems: [
+                {
+                  id: "a-39-n-2",
+                  actionTypeId: "TRANSFORM_MOVE",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      id: "612cbcbc78946b832b877330|f997fd9a-f91f-e2c2-ec5c-636fd6a16f4d",
+                    },
+                    yValue: 15,
+                    xUnit: "PX",
+                    yUnit: "vh",
+                    zUnit: "PX",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      createdOn: 1644139973472,
     },
   },
   site: {
