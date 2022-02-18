@@ -4682,6 +4682,43 @@
             i = r.env("editor");
           n ? i && t.remove() : (t.length && t.remove(), i || a.append(e));
         }
+        return (
+          (n.ready = function () {
+            var n,
+              r,
+              a,
+              u = o.attr("data-wf-status"),
+              p = o.attr("data-wf-domain") || "";
+            /\.webflow\.io$/i.test(p) && c.hostname !== p && (u = !0),
+              u &&
+                !s &&
+                ((e =
+                  e ||
+                  ((n = t('<a class="w-webflow-badge"></a>').attr(
+                    "href",
+                    "https://webflow.com?utm_campaign=brandjs"
+                  )),
+                  (r = t("<img>")
+                    .attr(
+                      "src",
+                      "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon.f67cd735e3.svg"
+                    )
+                    .attr("alt", "")
+                    .css({ marginRight: "8px", width: "16px" })),
+                  (a = t("<img>")
+                    .attr(
+                      "src",
+                      "https://d1otoma47x30pg.cloudfront.net/img/webflow-badge-text.6faa6a38cd.svg"
+                    )
+                    .attr("alt", "Made in Webflow")),
+                  n.append(r, a),
+                  n[0])),
+                d(),
+                setTimeout(d, 500),
+                t(i).off(f, l).on(f, l));
+          }),
+          n
+        );
       })
     );
   },
@@ -10675,10 +10712,11 @@
                   }
                   return t;
                 }, {}),
-            };
-          R(e);
-          var a = b(n, r.fields);
-          if (a) return E(a);
+            },
+            a = n.attr("data-wf-flow");
+          a && (r.wfFlow = a), R(e);
+          var c = b(n, r.fields);
+          if (c) return E(c);
           (r.fileUploads = (function (e) {
             var n = {};
             return (
@@ -10837,7 +10875,7 @@ Webflow.require("ix2").init({
           autoStopEventId: "e-3",
         },
       },
-      mediaQueries: ["main", "medium", "small", "tiny"],
+      mediaQueries: ["small", "tiny"],
       target: {
         id: "612cbcbc78946b832b877330|0e38cdd1-a45b-87fe-34bc-fbac4518b9ea",
         appliesTo: "ELEMENT",
@@ -10879,7 +10917,7 @@ Webflow.require("ix2").init({
           autoStopEventId: "e-2",
         },
       },
-      mediaQueries: ["main", "medium", "small", "tiny"],
+      mediaQueries: ["small", "tiny"],
       target: {
         id: "612cbcbc78946b832b877330|0e38cdd1-a45b-87fe-34bc-fbac4518b9ea",
         appliesTo: "ELEMENT",
@@ -10902,90 +10940,6 @@ Webflow.require("ix2").init({
         effectIn: null,
       },
       createdOn: 1640690825086,
-    },
-    "e-6": {
-      id: "e-6",
-      name: "",
-      animationType: "custom",
-      eventTypeId: "MOUSE_OVER",
-      action: {
-        id: "",
-        actionTypeId: "GENERAL_START_ACTION",
-        config: {
-          delay: 0,
-          easing: "",
-          duration: 0,
-          actionListId: "a-6",
-          affectedElements: {},
-          playInReverse: false,
-          autoStopEventId: "e-7",
-        },
-      },
-      mediaQueries: ["main", "medium", "small", "tiny"],
-      target: {
-        id: "612cbcbc78946b832b877330|643b204a-260a-8a2e-ffb7-51ea30030d14",
-        appliesTo: "ELEMENT",
-        styleBlockIds: [],
-      },
-      targets: [
-        {
-          id: "612cbcbc78946b832b877330|643b204a-260a-8a2e-ffb7-51ea30030d14",
-          appliesTo: "ELEMENT",
-          styleBlockIds: [],
-        },
-      ],
-      config: {
-        loop: false,
-        playInReverse: false,
-        scrollOffsetValue: null,
-        scrollOffsetUnit: null,
-        delay: null,
-        direction: null,
-        effectIn: null,
-      },
-      createdOn: 1640699788587,
-    },
-    "e-7": {
-      id: "e-7",
-      name: "",
-      animationType: "custom",
-      eventTypeId: "MOUSE_OUT",
-      action: {
-        id: "",
-        actionTypeId: "GENERAL_START_ACTION",
-        config: {
-          delay: 0,
-          easing: "",
-          duration: 0,
-          actionListId: "a-7",
-          affectedElements: {},
-          playInReverse: false,
-          autoStopEventId: "e-6",
-        },
-      },
-      mediaQueries: ["main", "medium", "small", "tiny"],
-      target: {
-        id: "612cbcbc78946b832b877330|643b204a-260a-8a2e-ffb7-51ea30030d14",
-        appliesTo: "ELEMENT",
-        styleBlockIds: [],
-      },
-      targets: [
-        {
-          id: "612cbcbc78946b832b877330|643b204a-260a-8a2e-ffb7-51ea30030d14",
-          appliesTo: "ELEMENT",
-          styleBlockIds: [],
-        },
-      ],
-      config: {
-        loop: false,
-        playInReverse: false,
-        scrollOffsetValue: null,
-        scrollOffsetUnit: null,
-        delay: null,
-        direction: null,
-        effectIn: null,
-      },
-      createdOn: 1640699788587,
     },
     "e-10": {
       id: "e-10",
@@ -11271,90 +11225,6 @@ Webflow.require("ix2").init({
       ],
       createdOn: 1641218545701,
     },
-    "e-24": {
-      id: "e-24",
-      name: "",
-      animationType: "custom",
-      eventTypeId: "MOUSE_OVER",
-      action: {
-        id: "",
-        actionTypeId: "GENERAL_START_ACTION",
-        config: {
-          delay: 0,
-          easing: "",
-          duration: 0,
-          actionListId: "a-6",
-          affectedElements: {},
-          playInReverse: false,
-          autoStopEventId: "e-25",
-        },
-      },
-      mediaQueries: ["main", "medium", "small", "tiny"],
-      target: {
-        id: "612cbcbc78946b832b877330|f08a5fad-a248-6475-eb8d-eeda000275f6",
-        appliesTo: "ELEMENT",
-        styleBlockIds: [],
-      },
-      targets: [
-        {
-          id: "612cbcbc78946b832b877330|f08a5fad-a248-6475-eb8d-eeda000275f6",
-          appliesTo: "ELEMENT",
-          styleBlockIds: [],
-        },
-      ],
-      config: {
-        loop: false,
-        playInReverse: false,
-        scrollOffsetValue: null,
-        scrollOffsetUnit: null,
-        delay: null,
-        direction: null,
-        effectIn: null,
-      },
-      createdOn: 1641417311329,
-    },
-    "e-25": {
-      id: "e-25",
-      name: "",
-      animationType: "custom",
-      eventTypeId: "MOUSE_OUT",
-      action: {
-        id: "",
-        actionTypeId: "GENERAL_START_ACTION",
-        config: {
-          delay: 0,
-          easing: "",
-          duration: 0,
-          actionListId: "a-7",
-          affectedElements: {},
-          playInReverse: false,
-          autoStopEventId: "e-24",
-        },
-      },
-      mediaQueries: ["main", "medium", "small", "tiny"],
-      target: {
-        id: "612cbcbc78946b832b877330|f08a5fad-a248-6475-eb8d-eeda000275f6",
-        appliesTo: "ELEMENT",
-        styleBlockIds: [],
-      },
-      targets: [
-        {
-          id: "612cbcbc78946b832b877330|f08a5fad-a248-6475-eb8d-eeda000275f6",
-          appliesTo: "ELEMENT",
-          styleBlockIds: [],
-        },
-      ],
-      config: {
-        loop: false,
-        playInReverse: false,
-        scrollOffsetValue: null,
-        scrollOffsetUnit: null,
-        delay: null,
-        direction: null,
-        effectIn: null,
-      },
-      createdOn: 1641417311331,
-    },
     "e-26": {
       id: "e-26",
       name: "",
@@ -11367,7 +11237,7 @@ Webflow.require("ix2").init({
           delay: 0,
           easing: "",
           duration: 0,
-          actionListId: "a-6",
+          actionListId: "a-40",
           affectedElements: {},
           playInReverse: false,
           autoStopEventId: "e-27",
@@ -11391,9 +11261,9 @@ Webflow.require("ix2").init({
         playInReverse: false,
         scrollOffsetValue: null,
         scrollOffsetUnit: null,
-        delay: null,
-        direction: null,
-        effectIn: null,
+        delay: 0,
+        direction: "LEFT",
+        effectIn: true,
       },
       createdOn: 1641461233117,
     },
@@ -11409,7 +11279,7 @@ Webflow.require("ix2").init({
           delay: 0,
           easing: "",
           duration: 0,
-          actionListId: "a-7",
+          actionListId: "a-41",
           affectedElements: {},
           playInReverse: false,
           autoStopEventId: "e-26",
@@ -11433,9 +11303,9 @@ Webflow.require("ix2").init({
         playInReverse: false,
         scrollOffsetValue: null,
         scrollOffsetUnit: null,
-        delay: null,
-        direction: null,
-        effectIn: null,
+        delay: 0,
+        direction: "LEFT",
+        effectIn: false,
       },
       createdOn: 1641461233119,
     },
@@ -12078,133 +11948,6 @@ Webflow.require("ix2").init({
       ],
       createdOn: 1641836150805,
     },
-    "e-49": {
-      id: "e-49",
-      name: "",
-      animationType: "custom",
-      eventTypeId: "MOUSE_OVER",
-      action: {
-        id: "",
-        actionTypeId: "GENERAL_START_ACTION",
-        config: {
-          delay: 0,
-          easing: "",
-          duration: 0,
-          actionListId: "a-35",
-          affectedElements: {},
-          playInReverse: false,
-          autoStopEventId: "e-50",
-        },
-      },
-      mediaQueries: ["main", "medium", "small", "tiny"],
-      target: {
-        id: "612cbcbc78946b832b877330|0e38cdd1-a45b-87fe-34bc-fbac4518b9ea",
-        appliesTo: "ELEMENT",
-        styleBlockIds: [],
-      },
-      targets: [
-        {
-          id: "612cbcbc78946b832b877330|0e38cdd1-a45b-87fe-34bc-fbac4518b9ea",
-          appliesTo: "ELEMENT",
-          styleBlockIds: [],
-        },
-      ],
-      config: {
-        loop: false,
-        playInReverse: false,
-        scrollOffsetValue: null,
-        scrollOffsetUnit: null,
-        delay: null,
-        direction: null,
-        effectIn: null,
-      },
-      createdOn: 1641842942954,
-    },
-    "e-50": {
-      id: "e-50",
-      name: "",
-      animationType: "custom",
-      eventTypeId: "MOUSE_OUT",
-      action: {
-        id: "",
-        actionTypeId: "GENERAL_START_ACTION",
-        config: {
-          delay: 0,
-          easing: "",
-          duration: 0,
-          actionListId: "a-38",
-          affectedElements: {},
-          playInReverse: false,
-          autoStopEventId: "e-49",
-        },
-      },
-      mediaQueries: ["main", "medium", "small", "tiny"],
-      target: {
-        id: "612cbcbc78946b832b877330|0e38cdd1-a45b-87fe-34bc-fbac4518b9ea",
-        appliesTo: "ELEMENT",
-        styleBlockIds: [],
-      },
-      targets: [
-        {
-          id: "612cbcbc78946b832b877330|0e38cdd1-a45b-87fe-34bc-fbac4518b9ea",
-          appliesTo: "ELEMENT",
-          styleBlockIds: [],
-        },
-      ],
-      config: {
-        loop: false,
-        playInReverse: false,
-        scrollOffsetValue: null,
-        scrollOffsetUnit: null,
-        delay: null,
-        direction: null,
-        effectIn: null,
-      },
-      createdOn: 1641842942956,
-    },
-    "e-51": {
-      id: "e-51",
-      name: "",
-      animationType: "custom",
-      eventTypeId: "MOUSE_MOVE",
-      action: {
-        id: "",
-        actionTypeId: "GENERAL_CONTINUOUS_ACTION",
-        config: { actionListId: "a-36", affectedElements: {}, duration: 0 },
-      },
-      mediaQueries: ["main", "medium", "small", "tiny"],
-      target: {
-        id: "612cbcbc78946b832b877330|0e38cdd1-a45b-87fe-34bc-fbac4518b9ea",
-        appliesTo: "ELEMENT",
-        styleBlockIds: [],
-      },
-      targets: [
-        {
-          id: "612cbcbc78946b832b877330|0e38cdd1-a45b-87fe-34bc-fbac4518b9ea",
-          appliesTo: "ELEMENT",
-          styleBlockIds: [],
-        },
-      ],
-      config: [
-        {
-          continuousParameterGroupId: "a-36-p",
-          selectedAxis: "X_AXIS",
-          basedOn: "ELEMENT",
-          reverse: false,
-          smoothing: 50,
-          restingState: 50,
-        },
-        {
-          continuousParameterGroupId: "a-36-p-2",
-          selectedAxis: "Y_AXIS",
-          basedOn: "ELEMENT",
-          reverse: false,
-          smoothing: 50,
-          restingState: 50,
-        },
-      ],
-      createdOn: 1641843055261,
-    },
     "e-52": {
       id: "e-52",
       name: "",
@@ -12259,11 +12002,17 @@ Webflow.require("ix2").init({
       },
       mediaQueries: ["main", "medium", "small", "tiny"],
       target: {
+        id: "612cbcbc78946b832b877330",
         appliesTo: "PAGE",
         styleBlockIds: [],
-        id: "612cbcbc78946b832b877330",
       },
-      targets: [],
+      targets: [
+        {
+          id: "612cbcbc78946b832b877330",
+          appliesTo: "PAGE",
+          styleBlockIds: [],
+        },
+      ],
       config: [
         {
           continuousParameterGroupId: "a-39-p",
@@ -12302,7 +12051,13 @@ Webflow.require("ix2").init({
         appliesTo: "ELEMENT",
         styleBlockIds: [],
       },
-      targets: [],
+      targets: [
+        {
+          id: "61d71499618c94a1888a4fa7|9e429305-b3f0-593e-25f9-2ad9b56cf4e3",
+          appliesTo: "ELEMENT",
+          styleBlockIds: [],
+        },
+      ],
       config: {
         loop: false,
         playInReverse: false,
@@ -12338,7 +12093,13 @@ Webflow.require("ix2").init({
         appliesTo: "ELEMENT",
         styleBlockIds: [],
       },
-      targets: [],
+      targets: [
+        {
+          id: "61d71499618c94a1888a4fa7|9e429305-b3f0-593e-25f9-2ad9b56cf4e3",
+          appliesTo: "ELEMENT",
+          styleBlockIds: [],
+        },
+      ],
       config: {
         loop: false,
         playInReverse: false,
@@ -12348,43 +12109,6 @@ Webflow.require("ix2").init({
         direction: null,
         effectIn: null,
       },
-      createdOn: 1644147756655,
-    },
-    "e-57": {
-      id: "e-57",
-      name: "",
-      animationType: "preset",
-      eventTypeId: "MOUSE_MOVE",
-      action: {
-        id: "",
-        actionTypeId: "GENERAL_CONTINUOUS_ACTION",
-        config: { actionListId: "a-36", affectedElements: {}, duration: 0 },
-      },
-      mediaQueries: ["main", "medium", "small", "tiny"],
-      target: {
-        id: "61d71499618c94a1888a4fa7|9e429305-b3f0-593e-25f9-2ad9b56cf4e3",
-        appliesTo: "ELEMENT",
-        styleBlockIds: [],
-      },
-      targets: [],
-      config: [
-        {
-          continuousParameterGroupId: "a-36-p",
-          selectedAxis: "X_AXIS",
-          basedOn: "ELEMENT",
-          reverse: false,
-          smoothing: 50,
-          restingState: 50,
-        },
-        {
-          continuousParameterGroupId: "a-36-p-2",
-          selectedAxis: "Y_AXIS",
-          basedOn: "ELEMENT",
-          reverse: false,
-          smoothing: 50,
-          restingState: 50,
-        },
-      ],
       createdOn: 1644147756655,
     },
     "e-58": {
@@ -12411,7 +12135,13 @@ Webflow.require("ix2").init({
         appliesTo: "ELEMENT",
         styleBlockIds: [],
       },
-      targets: [],
+      targets: [
+        {
+          id: "61d71499618c94a1888a4fa7|9e429305-b3f0-593e-25f9-2ad9b56cf4e3",
+          appliesTo: "ELEMENT",
+          styleBlockIds: [],
+        },
+      ],
       config: {
         loop: false,
         playInReverse: false,
@@ -12447,7 +12177,13 @@ Webflow.require("ix2").init({
         appliesTo: "ELEMENT",
         styleBlockIds: [],
       },
-      targets: [],
+      targets: [
+        {
+          id: "61d71499618c94a1888a4fa7|9e429305-b3f0-593e-25f9-2ad9b56cf4e3",
+          appliesTo: "ELEMENT",
+          styleBlockIds: [],
+        },
+      ],
       config: {
         loop: false,
         playInReverse: false,
@@ -12475,100 +12211,44 @@ Webflow.require("ix2").init({
                 easing: "",
                 duration: 500,
                 target: {
-                  selector: ".navigation",
-                  selectorGuids: ["91bb98e6-3351-4ef5-86e5-ee34a8057995"],
+                  useEventTarget: "SIBLINGS",
+                  selector: ".menu_list_con",
+                  selectorGuids: ["fda81dd8-6aaf-2a9d-daba-825ca107af48"],
                 },
                 value: 0,
                 unit: "",
               },
             },
             {
-              id: "a-3-n-3",
-              actionTypeId: "TRANSFORM_MOVE",
-              config: {
-                delay: 0,
-                easing: "",
-                duration: 500,
-                target: {
-                  selector: ".navigation",
-                  selectorGuids: ["91bb98e6-3351-4ef5-86e5-ee34a8057995"],
-                },
-                yValue: -1000,
-                xUnit: "PX",
-                yUnit: "px",
-                zUnit: "PX",
-              },
-            },
-            {
-              id: "a-3-n-8",
-              actionTypeId: "GENERAL_DISPLAY",
-              config: {
-                delay: 0,
-                easing: "",
-                duration: 0,
-                target: {
-                  selector: ".navigation",
-                  selectorGuids: ["91bb98e6-3351-4ef5-86e5-ee34a8057995"],
-                },
-                value: "block",
-              },
-            },
-            {
-              id: "a-3-n-10",
-              actionTypeId: "TRANSFORM_ROTATE",
-              config: {
-                delay: 0,
-                easing: "",
-                duration: 500,
-                target: {
-                  selector: ".line-1.menu-line",
-                  selectorGuids: [
-                    "66e7241a-4d9d-1a1b-1baf-60eb24284c16",
-                    "60ba2d0f-5045-afaa-d530-95ef3e5526a2",
-                  ],
-                },
-                zValue: 0,
-                xUnit: "DEG",
-                yUnit: "DEG",
-                zUnit: "deg",
-              },
-            },
-            {
-              id: "a-3-n-11",
-              actionTypeId: "TRANSFORM_ROTATE",
+              id: "a-3-n-13",
+              actionTypeId: "STYLE_OPACITY",
               config: {
                 delay: 0,
                 easing: "",
                 duration: 500,
                 target: {
                   useEventTarget: "CHILDREN",
-                  selector: ".line-3.menu-line",
-                  selectorGuids: [
-                    "0d15abf7-f003-9235-946f-1286271173b0",
-                    "14f61ec4-4ee3-008a-31b3-67e7e11d6c54",
-                  ],
+                  selector: ".image-19",
+                  selectorGuids: ["e6597d38-0a66-f4e7-15ce-dd189ab2e16f"],
                 },
-                yValue: 0,
-                xUnit: "DEG",
-                yUnit: "deg",
-                zUnit: "DEG",
+                value: 1,
+                unit: "",
               },
             },
             {
-              id: "a-3-n-15",
-              actionTypeId: "TRANSFORM_ROTATE",
+              id: "a-3-n-10",
+              actionTypeId: "STYLE_OPACITY",
               config: {
                 delay: 0,
                 easing: "",
                 duration: 500,
                 target: {
-                  useEventTarget: true,
-                  id: "612cbcbc78946b832b877330|0e38cdd1-a45b-87fe-34bc-fbac4518b9ea",
+                  useEventTarget: "CHILDREN",
+                  selector: ".image-20",
+                  selectorGuids: ["f726db25-9253-f269-0a35-a083523b7068"],
                 },
-                zValue: 0,
-                xUnit: "DEG",
-                yUnit: "DEG",
-                zUnit: "deg",
+                value: 0,
+                unit: "",
               },
             },
           ],
@@ -12583,121 +12263,16 @@ Webflow.require("ix2").init({
                 easing: "inCubic",
                 duration: 500,
                 target: {
-                  selector: ".navigation",
-                  selectorGuids: ["91bb98e6-3351-4ef5-86e5-ee34a8057995"],
+                  useEventTarget: "SIBLINGS",
+                  selector: ".menu_list_con",
+                  selectorGuids: ["fda81dd8-6aaf-2a9d-daba-825ca107af48"],
                 },
                 value: 1,
                 unit: "",
               },
             },
             {
-              id: "a-3-n-5",
-              actionTypeId: "STYLE_BACKGROUND_COLOR",
-              config: {
-                delay: 0,
-                easing: "",
-                duration: 500,
-                target: {
-                  selector: ".line-1.menu-line",
-                  selectorGuids: [
-                    "66e7241a-4d9d-1a1b-1baf-60eb24284c16",
-                    "60ba2d0f-5045-afaa-d530-95ef3e5526a2",
-                  ],
-                },
-                globalSwatchId: "",
-                rValue: 255,
-                bValue: 255,
-                gValue: 255,
-                aValue: 1,
-              },
-            },
-            {
               id: "a-3-n-12",
-              actionTypeId: "TRANSFORM_MOVE",
-              config: {
-                delay: 0,
-                easing: "",
-                duration: 200,
-                target: {
-                  selector: ".line-1.menu-line",
-                  selectorGuids: [
-                    "66e7241a-4d9d-1a1b-1baf-60eb24284c16",
-                    "60ba2d0f-5045-afaa-d530-95ef3e5526a2",
-                  ],
-                },
-                yValue: 12,
-                xUnit: "PX",
-                yUnit: "px",
-                zUnit: "PX",
-              },
-            },
-            {
-              id: "a-3-n-6",
-              actionTypeId: "STYLE_BACKGROUND_COLOR",
-              config: {
-                delay: 0,
-                easing: "",
-                duration: 500,
-                target: {
-                  useEventTarget: "CHILDREN",
-                  selector: ".line-2.menu-line",
-                  selectorGuids: [
-                    "e75727b5-2515-ac50-0875-8b8430a7e410",
-                    "3c8be5a1-b105-17cd-637e-615c31e5bc2b",
-                  ],
-                },
-                globalSwatchId: "",
-                rValue: 255,
-                bValue: 255,
-                gValue: 255,
-                aValue: 1,
-              },
-            },
-            {
-              id: "a-3-n-7",
-              actionTypeId: "STYLE_BACKGROUND_COLOR",
-              config: {
-                delay: 0,
-                easing: "",
-                duration: 500,
-                target: {
-                  useEventTarget: "CHILDREN",
-                  selector: ".line-3.menu-line",
-                  selectorGuids: [
-                    "0d15abf7-f003-9235-946f-1286271173b0",
-                    "14f61ec4-4ee3-008a-31b3-67e7e11d6c54",
-                  ],
-                },
-                globalSwatchId: "",
-                rValue: 255,
-                bValue: 255,
-                gValue: 255,
-                aValue: 1,
-              },
-            },
-            {
-              id: "a-3-n-13",
-              actionTypeId: "TRANSFORM_MOVE",
-              config: {
-                delay: 0,
-                easing: "",
-                duration: 200,
-                target: {
-                  useEventTarget: "CHILDREN",
-                  selector: ".line-3.menu-line",
-                  selectorGuids: [
-                    "0d15abf7-f003-9235-946f-1286271173b0",
-                    "14f61ec4-4ee3-008a-31b3-67e7e11d6c54",
-                  ],
-                },
-                yValue: -12,
-                xUnit: "PX",
-                yUnit: "px",
-                zUnit: "PX",
-              },
-            },
-            {
-              id: "a-3-n-18",
               actionTypeId: "STYLE_OPACITY",
               config: {
                 delay: 0,
@@ -12705,89 +12280,42 @@ Webflow.require("ix2").init({
                 duration: 500,
                 target: {
                   useEventTarget: "CHILDREN",
-                  selector: ".line-2.menu-line",
-                  selectorGuids: [
-                    "e75727b5-2515-ac50-0875-8b8430a7e410",
-                    "3c8be5a1-b105-17cd-637e-615c31e5bc2b",
-                  ],
+                  selector: ".image-19",
+                  selectorGuids: ["e6597d38-0a66-f4e7-15ce-dd189ab2e16f"],
                 },
                 value: 0,
                 unit: "",
               },
             },
             {
-              id: "a-3-n-16",
-              actionTypeId: "TRANSFORM_ROTATE",
+              id: "a-3-n-11",
+              actionTypeId: "STYLE_OPACITY",
               config: {
-                delay: 200,
-                easing: "",
-                duration: 500,
-                target: {
-                  selector: ".line-1.menu-line",
-                  selectorGuids: [
-                    "66e7241a-4d9d-1a1b-1baf-60eb24284c16",
-                    "60ba2d0f-5045-afaa-d530-95ef3e5526a2",
-                  ],
-                },
-                zValue: 45,
-                xUnit: "DEG",
-                yUnit: "DEG",
-                zUnit: "deg",
-              },
-            },
-            {
-              id: "a-3-n-17",
-              actionTypeId: "TRANSFORM_ROTATE",
-              config: {
-                delay: 200,
+                delay: 0,
                 easing: "",
                 duration: 500,
                 target: {
                   useEventTarget: "CHILDREN",
-                  selector: ".line-3.menu-line",
-                  selectorGuids: [
-                    "0d15abf7-f003-9235-946f-1286271173b0",
-                    "14f61ec4-4ee3-008a-31b3-67e7e11d6c54",
-                  ],
+                  selector: ".image-20",
+                  selectorGuids: ["f726db25-9253-f269-0a35-a083523b7068"],
                 },
-                zValue: -45,
-                xUnit: "DEG",
-                yUnit: "DEG",
-                zUnit: "deg",
+                value: 1,
+                unit: "",
               },
             },
             {
-              id: "a-3-n-14",
-              actionTypeId: "TRANSFORM_ROTATE",
+              id: "a-3-n-9",
+              actionTypeId: "GENERAL_DISPLAY",
               config: {
-                delay: 200,
+                delay: 0,
                 easing: "",
-                duration: 300,
+                duration: 0,
                 target: {
-                  useEventTarget: true,
-                  id: "612cbcbc78946b832b877330|0e38cdd1-a45b-87fe-34bc-fbac4518b9ea",
+                  useEventTarget: "SIBLINGS",
+                  selector: ".menu_list_con",
+                  selectorGuids: ["fda81dd8-6aaf-2a9d-daba-825ca107af48"],
                 },
-                zValue: 180,
-                xUnit: "DEG",
-                yUnit: "DEG",
-                zUnit: "deg",
-              },
-            },
-            {
-              id: "a-3-n-4",
-              actionTypeId: "TRANSFORM_MOVE",
-              config: {
-                delay: 300,
-                easing: "outCubic",
-                duration: 700,
-                target: {
-                  selector: ".navigation",
-                  selectorGuids: ["91bb98e6-3351-4ef5-86e5-ee34a8057995"],
-                },
-                yValue: 0,
-                xUnit: "PX",
-                yUnit: "px",
-                zUnit: "PX",
+                value: "flex",
               },
             },
           ],
@@ -12810,100 +12338,25 @@ Webflow.require("ix2").init({
                 easing: "inCubic",
                 duration: 500,
                 target: {
-                  selector: ".navigation",
-                  selectorGuids: ["91bb98e6-3351-4ef5-86e5-ee34a8057995"],
+                  useEventTarget: "SIBLINGS",
+                  selector: ".menu_list_con",
+                  selectorGuids: ["fda81dd8-6aaf-2a9d-daba-825ca107af48"],
                 },
                 value: 0,
                 unit: "",
               },
             },
             {
-              id: "a-5-n-8",
-              actionTypeId: "TRANSFORM_ROTATE",
-              config: {
-                delay: 0,
-                easing: "",
-                duration: 500,
-                target: {
-                  selector: ".hamberger",
-                  selectorGuids: ["9470a975-e528-1df4-87de-1e927de663f1"],
-                },
-                zValue: 0,
-                xUnit: "DEG",
-                yUnit: "DEG",
-                zUnit: "deg",
-              },
-            },
-            {
-              id: "a-5-n-10",
-              actionTypeId: "TRANSFORM_ROTATE",
-              config: {
-                delay: 0,
-                easing: "",
-                duration: 500,
-                target: {
-                  selector: ".line-3.menu-line",
-                  selectorGuids: [
-                    "0d15abf7-f003-9235-946f-1286271173b0",
-                    "14f61ec4-4ee3-008a-31b3-67e7e11d6c54",
-                  ],
-                },
-                zValue: 0,
-                xUnit: "DEG",
-                yUnit: "DEG",
-                zUnit: "deg",
-              },
-            },
-            {
-              id: "a-5-n-9",
-              actionTypeId: "TRANSFORM_ROTATE",
-              config: {
-                delay: 0,
-                easing: "",
-                duration: 500,
-                target: {
-                  selector: ".line-1.menu-line",
-                  selectorGuids: [
-                    "66e7241a-4d9d-1a1b-1baf-60eb24284c16",
-                    "60ba2d0f-5045-afaa-d530-95ef3e5526a2",
-                  ],
-                },
-                zValue: 0,
-                xUnit: "DEG",
-                yUnit: "DEG",
-                zUnit: "deg",
-              },
-            },
-            {
-              id: "a-5-n-4",
-              actionTypeId: "TRANSFORM_MOVE",
-              config: {
-                delay: 200,
-                easing: "outCubic",
-                duration: 700,
-                target: {
-                  selector: ".navigation",
-                  selectorGuids: ["91bb98e6-3351-4ef5-86e5-ee34a8057995"],
-                },
-                yValue: -1000,
-                xUnit: "PX",
-                yUnit: "px",
-                zUnit: "PX",
-              },
-            },
-            {
-              id: "a-5-n-11",
+              id: "a-5-n-6",
               actionTypeId: "STYLE_OPACITY",
               config: {
-                delay: 200,
+                delay: 0,
                 easing: "",
                 duration: 500,
                 target: {
-                  selector: ".line-2.menu-line",
-                  selectorGuids: [
-                    "e75727b5-2515-ac50-0875-8b8430a7e410",
-                    "3c8be5a1-b105-17cd-637e-615c31e5bc2b",
-                  ],
+                  useEventTarget: "CHILDREN",
+                  selector: ".image-19",
+                  selectorGuids: ["e6597d38-0a66-f4e7-15ce-dd189ab2e16f"],
                 },
                 value: 1,
                 unit: "",
@@ -12911,105 +12364,33 @@ Webflow.require("ix2").init({
             },
             {
               id: "a-5-n-5",
-              actionTypeId: "STYLE_BACKGROUND_COLOR",
+              actionTypeId: "STYLE_OPACITY",
               config: {
-                delay: 200,
+                delay: 0,
                 easing: "",
                 duration: 500,
                 target: {
-                  selector: ".line-2.menu-line",
-                  selectorGuids: [
-                    "e75727b5-2515-ac50-0875-8b8430a7e410",
-                    "3c8be5a1-b105-17cd-637e-615c31e5bc2b",
-                  ],
+                  useEventTarget: "CHILDREN",
+                  selector: ".image-20",
+                  selectorGuids: ["f726db25-9253-f269-0a35-a083523b7068"],
                 },
-                globalSwatchId: "",
-                rValue: 0,
-                bValue: 0,
-                gValue: 0,
-                aValue: 1,
+                value: 0,
+                unit: "",
               },
             },
             {
-              id: "a-5-n-6",
-              actionTypeId: "STYLE_BACKGROUND_COLOR",
+              id: "a-5-n-4",
+              actionTypeId: "GENERAL_DISPLAY",
               config: {
-                delay: 200,
+                delay: 0,
                 easing: "",
-                duration: 500,
+                duration: 0,
+                value: "none",
                 target: {
-                  selector: ".line-3.menu-line",
-                  selectorGuids: [
-                    "0d15abf7-f003-9235-946f-1286271173b0",
-                    "14f61ec4-4ee3-008a-31b3-67e7e11d6c54",
-                  ],
+                  useEventTarget: "SIBLINGS",
+                  selector: ".menu_list_con",
+                  selectorGuids: ["fda81dd8-6aaf-2a9d-daba-825ca107af48"],
                 },
-                globalSwatchId: "",
-                rValue: 0,
-                bValue: 0,
-                gValue: 0,
-                aValue: 1,
-              },
-            },
-            {
-              id: "a-5-n-7",
-              actionTypeId: "STYLE_BACKGROUND_COLOR",
-              config: {
-                delay: 200,
-                easing: "",
-                duration: 500,
-                target: {
-                  selector: ".line-1.menu-line",
-                  selectorGuids: [
-                    "66e7241a-4d9d-1a1b-1baf-60eb24284c16",
-                    "60ba2d0f-5045-afaa-d530-95ef3e5526a2",
-                  ],
-                },
-                globalSwatchId: "",
-                rValue: 0,
-                bValue: 0,
-                gValue: 0,
-                aValue: 1,
-              },
-            },
-            {
-              id: "a-5-n-13",
-              actionTypeId: "TRANSFORM_MOVE",
-              config: {
-                delay: 500,
-                easing: "",
-                duration: 200,
-                target: {
-                  selector: ".line-3.menu-line",
-                  selectorGuids: [
-                    "0d15abf7-f003-9235-946f-1286271173b0",
-                    "14f61ec4-4ee3-008a-31b3-67e7e11d6c54",
-                  ],
-                },
-                yValue: 0,
-                xUnit: "PX",
-                yUnit: "px",
-                zUnit: "PX",
-              },
-            },
-            {
-              id: "a-5-n-12",
-              actionTypeId: "TRANSFORM_MOVE",
-              config: {
-                delay: 500,
-                easing: "",
-                duration: 200,
-                target: {
-                  selector: ".line-1.menu-line",
-                  selectorGuids: [
-                    "66e7241a-4d9d-1a1b-1baf-60eb24284c16",
-                    "60ba2d0f-5045-afaa-d530-95ef3e5526a2",
-                  ],
-                },
-                yValue: 0,
-                xUnit: "PX",
-                yUnit: "px",
-                zUnit: "PX",
               },
             },
           ],
@@ -13017,126 +12398,6 @@ Webflow.require("ix2").init({
       ],
       useFirstGroupAsInitialState: false,
       createdOn: 1630334099713,
-    },
-    "a-6": {
-      id: "a-6",
-      title: "menu_contact us",
-      actionItemGroups: [
-        {
-          actionItems: [
-            {
-              id: "a-6-n-2",
-              actionTypeId: "TRANSFORM_ROTATE",
-              config: {
-                delay: 0,
-                easing: "",
-                duration: 500,
-                target: {
-                  selector: ".image-3",
-                  selectorGuids: ["47a433fb-b4df-236e-d072-f06c3e8052b0"],
-                },
-                zValue: 45,
-                xUnit: "DEG",
-                yUnit: "DEG",
-                zUnit: "deg",
-              },
-            },
-            {
-              id: "a-6-n-3",
-              actionTypeId: "TRANSFORM_MOVE",
-              config: {
-                delay: 0,
-                easing: "",
-                duration: 500,
-                target: {
-                  selector: ".image-3",
-                  selectorGuids: ["47a433fb-b4df-236e-d072-f06c3e8052b0"],
-                },
-                xValue: -10,
-                yValue: -10,
-                xUnit: "px",
-                yUnit: "px",
-                zUnit: "PX",
-              },
-            },
-          ],
-        },
-        {
-          actionItems: [
-            {
-              id: "a-6-n",
-              actionTypeId: "TRANSFORM_MOVE",
-              config: {
-                delay: 0,
-                easing: "",
-                duration: 300,
-                target: {
-                  selector: ".image-3",
-                  selectorGuids: ["47a433fb-b4df-236e-d072-f06c3e8052b0"],
-                },
-                xValue: 10,
-                yValue: 10,
-                xUnit: "px",
-                yUnit: "px",
-                zUnit: "PX",
-              },
-            },
-          ],
-        },
-      ],
-      useFirstGroupAsInitialState: true,
-      createdOn: 1640695289074,
-    },
-    "a-7": {
-      id: "a-7",
-      title: "menu_contact us out",
-      actionItemGroups: [
-        {
-          actionItems: [
-            {
-              id: "a-7-n",
-              actionTypeId: "TRANSFORM_ROTATE",
-              config: {
-                delay: 0,
-                easing: "",
-                duration: 500,
-                target: {
-                  selector: ".image-3",
-                  selectorGuids: ["47a433fb-b4df-236e-d072-f06c3e8052b0"],
-                },
-                zValue: 45,
-                xUnit: "DEG",
-                yUnit: "DEG",
-                zUnit: "deg",
-              },
-            },
-          ],
-        },
-        {
-          actionItems: [
-            {
-              id: "a-7-n-2",
-              actionTypeId: "TRANSFORM_MOVE",
-              config: {
-                delay: 0,
-                easing: "easeOut",
-                duration: 500,
-                target: {
-                  selector: ".image-3",
-                  selectorGuids: ["47a433fb-b4df-236e-d072-f06c3e8052b0"],
-                },
-                xValue: -10,
-                yValue: -10,
-                xUnit: "px",
-                yUnit: "px",
-                zUnit: "PX",
-              },
-            },
-          ],
-        },
-      ],
-      useFirstGroupAsInitialState: true,
-      createdOn: 1640695289074,
     },
     "a-8": {
       id: "a-8",
@@ -13432,6 +12693,88 @@ Webflow.require("ix2").init({
         },
       ],
       createdOn: 1641218554942,
+    },
+    "a-40": {
+      id: "a-40",
+      title: "Button back slide in",
+      actionItemGroups: [
+        {
+          actionItems: [
+            {
+              id: "a-40-n",
+              actionTypeId: "STYLE_SIZE",
+              config: {
+                delay: 0,
+                easing: "",
+                duration: 500,
+                target: {
+                  useEventTarget: "CHILDREN",
+                  selector: ".div-block-27",
+                  selectorGuids: ["c3b19662-bca8-ed58-a074-764bf045bd35"],
+                },
+                widthValue: 0,
+                widthUnit: "%",
+                heightUnit: "PX",
+                locked: false,
+              },
+            },
+          ],
+        },
+        {
+          actionItems: [
+            {
+              id: "a-40-n-2",
+              actionTypeId: "STYLE_SIZE",
+              config: {
+                delay: 0,
+                easing: "",
+                duration: 300,
+                target: {
+                  useEventTarget: "CHILDREN",
+                  selector: ".div-block-27",
+                  selectorGuids: ["c3b19662-bca8-ed58-a074-764bf045bd35"],
+                },
+                widthValue: 100,
+                widthUnit: "%",
+                heightUnit: "px",
+                locked: false,
+              },
+            },
+          ],
+        },
+      ],
+      useFirstGroupAsInitialState: true,
+      createdOn: 1644156472344,
+    },
+    "a-41": {
+      id: "a-41",
+      title: "Button back slide out",
+      actionItemGroups: [
+        {
+          actionItems: [
+            {
+              id: "a-41-n-2",
+              actionTypeId: "STYLE_SIZE",
+              config: {
+                delay: 0,
+                easing: "",
+                duration: 500,
+                target: {
+                  useEventTarget: "CHILDREN",
+                  selector: ".div-block-27",
+                  selectorGuids: ["c3b19662-bca8-ed58-a074-764bf045bd35"],
+                },
+                widthValue: 0,
+                widthUnit: "%",
+                heightUnit: "px",
+                locked: false,
+              },
+            },
+          ],
+        },
+      ],
+      useFirstGroupAsInitialState: false,
+      createdOn: 1644156472344,
     },
     a: {
       id: "a",
@@ -15304,6 +14647,142 @@ Webflow.require("ix2").init({
       ],
       createdOn: 1641835781907,
     },
+    "a-37": {
+      id: "a-37",
+      title: "Click me Rotate",
+      actionItemGroups: [
+        {
+          actionItems: [
+            {
+              id: "a-37-n",
+              actionTypeId: "TRANSFORM_ROTATE",
+              config: {
+                delay: 0,
+                easing: "",
+                duration: 4000,
+                target: {
+                  id: "612cbcbc78946b832b877330|61c30bdf-4cc1-5fbd-c79e-5dce2dbf27d2",
+                },
+                zValue: 360,
+                xUnit: "DEG",
+                yUnit: "DEG",
+                zUnit: "deg",
+              },
+            },
+            {
+              id: "a-37-n-3",
+              actionTypeId: "TRANSFORM_ROTATE",
+              config: {
+                delay: 0,
+                easing: "",
+                duration: 4000,
+                target: {
+                  id: "612cbcbc78946b832b877330|048f5a65-bf90-b7d9-9b63-de5646dcadaa",
+                },
+                zValue: 360,
+                xUnit: "DEG",
+                yUnit: "DEG",
+                zUnit: "deg",
+              },
+            },
+          ],
+        },
+        {
+          actionItems: [
+            {
+              id: "a-37-n-2",
+              actionTypeId: "TRANSFORM_ROTATE",
+              config: {
+                delay: 0,
+                easing: "",
+                duration: 0,
+                target: {
+                  id: "612cbcbc78946b832b877330|61c30bdf-4cc1-5fbd-c79e-5dce2dbf27d2",
+                },
+                zValue: 0,
+                xUnit: "DEG",
+                yUnit: "DEG",
+                zUnit: "deg",
+              },
+            },
+            {
+              id: "a-37-n-4",
+              actionTypeId: "TRANSFORM_ROTATE",
+              config: {
+                delay: 0,
+                easing: "",
+                duration: 0,
+                target: {
+                  id: "612cbcbc78946b832b877330|048f5a65-bf90-b7d9-9b63-de5646dcadaa",
+                },
+                zValue: 0,
+                xUnit: "DEG",
+                yUnit: "DEG",
+                zUnit: "deg",
+              },
+            },
+          ],
+        },
+      ],
+      useFirstGroupAsInitialState: false,
+      createdOn: 1641878507403,
+    },
+    "a-39": {
+      id: "a-39",
+      title: "scroll indicator",
+      continuousParameterGroups: [
+        {
+          id: "a-39-p",
+          type: "SCROLL_PROGRESS",
+          parameterLabel: "Scroll",
+          continuousActionGroups: [
+            {
+              keyframe: 0,
+              actionItems: [
+                {
+                  id: "a-39-n",
+                  actionTypeId: "TRANSFORM_MOVE",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      id: "612cbcbc78946b832b877330|f997fd9a-f91f-e2c2-ec5c-636fd6a16f4d",
+                    },
+                    yValue: -15,
+                    xUnit: "PX",
+                    yUnit: "vh",
+                    zUnit: "PX",
+                  },
+                },
+              ],
+            },
+            {
+              keyframe: 100,
+              actionItems: [
+                {
+                  id: "a-39-n-2",
+                  actionTypeId: "TRANSFORM_MOVE",
+                  config: {
+                    delay: 0,
+                    easing: "",
+                    duration: 500,
+                    target: {
+                      id: "612cbcbc78946b832b877330|f997fd9a-f91f-e2c2-ec5c-636fd6a16f4d",
+                    },
+                    yValue: 15,
+                    xUnit: "PX",
+                    yUnit: "vh",
+                    zUnit: "PX",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      createdOn: 1644139973472,
+    },
     "a-35": {
       id: "a-35",
       title: "Cursor Hover link in",
@@ -15452,161 +14931,6 @@ Webflow.require("ix2").init({
       ],
       useFirstGroupAsInitialState: false,
       createdOn: 1641842990846,
-    },
-    "a-36": {
-      id: "a-36",
-      title: "cursor hover link",
-      continuousParameterGroups: [
-        {
-          id: "a-36-p",
-          type: "MOUSE_X",
-          parameterLabel: "Mouse X",
-          continuousActionGroups: [],
-        },
-        {
-          id: "a-36-p-2",
-          type: "MOUSE_Y",
-          parameterLabel: "Mouse Y",
-          continuousActionGroups: [],
-        },
-      ],
-      createdOn: 1641843060436,
-    },
-    "a-37": {
-      id: "a-37",
-      title: "Click me Rotate",
-      actionItemGroups: [
-        {
-          actionItems: [
-            {
-              id: "a-37-n",
-              actionTypeId: "TRANSFORM_ROTATE",
-              config: {
-                delay: 0,
-                easing: "",
-                duration: 4000,
-                target: {
-                  id: "612cbcbc78946b832b877330|61c30bdf-4cc1-5fbd-c79e-5dce2dbf27d2",
-                },
-                zValue: 360,
-                xUnit: "DEG",
-                yUnit: "DEG",
-                zUnit: "deg",
-              },
-            },
-            {
-              id: "a-37-n-3",
-              actionTypeId: "TRANSFORM_ROTATE",
-              config: {
-                delay: 0,
-                easing: "",
-                duration: 4000,
-                target: {
-                  id: "612cbcbc78946b832b877330|048f5a65-bf90-b7d9-9b63-de5646dcadaa",
-                },
-                zValue: 360,
-                xUnit: "DEG",
-                yUnit: "DEG",
-                zUnit: "deg",
-              },
-            },
-          ],
-        },
-        {
-          actionItems: [
-            {
-              id: "a-37-n-2",
-              actionTypeId: "TRANSFORM_ROTATE",
-              config: {
-                delay: 0,
-                easing: "",
-                duration: 0,
-                target: {
-                  id: "612cbcbc78946b832b877330|61c30bdf-4cc1-5fbd-c79e-5dce2dbf27d2",
-                },
-                zValue: 0,
-                xUnit: "DEG",
-                yUnit: "DEG",
-                zUnit: "deg",
-              },
-            },
-            {
-              id: "a-37-n-4",
-              actionTypeId: "TRANSFORM_ROTATE",
-              config: {
-                delay: 0,
-                easing: "",
-                duration: 0,
-                target: {
-                  id: "612cbcbc78946b832b877330|048f5a65-bf90-b7d9-9b63-de5646dcadaa",
-                },
-                zValue: 0,
-                xUnit: "DEG",
-                yUnit: "DEG",
-                zUnit: "deg",
-              },
-            },
-          ],
-        },
-      ],
-      useFirstGroupAsInitialState: false,
-      createdOn: 1641878507403,
-    },
-    "a-39": {
-      id: "a-39",
-      title: "scroll indicator",
-      continuousParameterGroups: [
-        {
-          id: "a-39-p",
-          type: "SCROLL_PROGRESS",
-          parameterLabel: "Scroll",
-          continuousActionGroups: [
-            {
-              keyframe: 0,
-              actionItems: [
-                {
-                  id: "a-39-n",
-                  actionTypeId: "TRANSFORM_MOVE",
-                  config: {
-                    delay: 0,
-                    easing: "",
-                    duration: 500,
-                    target: {
-                      id: "612cbcbc78946b832b877330|f997fd9a-f91f-e2c2-ec5c-636fd6a16f4d",
-                    },
-                    yValue: -15,
-                    xUnit: "PX",
-                    yUnit: "vh",
-                    zUnit: "PX",
-                  },
-                },
-              ],
-            },
-            {
-              keyframe: 100,
-              actionItems: [
-                {
-                  id: "a-39-n-2",
-                  actionTypeId: "TRANSFORM_MOVE",
-                  config: {
-                    delay: 0,
-                    easing: "",
-                    duration: 500,
-                    target: {
-                      id: "612cbcbc78946b832b877330|f997fd9a-f91f-e2c2-ec5c-636fd6a16f4d",
-                    },
-                    yValue: 15,
-                    xUnit: "PX",
-                    yUnit: "vh",
-                    zUnit: "PX",
-                  },
-                },
-              ],
-            },
-          ],
-        },
-      ],
-      createdOn: 1644139973472,
     },
   },
   site: {
