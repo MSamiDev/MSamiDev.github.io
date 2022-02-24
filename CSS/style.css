@@ -1,4 +1,4 @@
-/* Generated on: Fri Feb 18 2022 12:03:00 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Fri Feb 18 2022 13:14:01 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -5101,7 +5101,10 @@ a {
 
 @media screen and (max-width: 767px) {
   .header {
-    display: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .body {
